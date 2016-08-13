@@ -36,18 +36,6 @@ assignment by the end of class and have no homework. If your merging strategy is
 thought through carefully, the assignment is going to take MUCH longer and your team
 will have homework.
 
-## Key Information
-
-Released: 8-28-14
-
-Due Date: 9-02-14
-
-Close Time: 11:00
-
-Requires Group Completion: Yes
-
-Total Groups: 4
-
 ## Part 0 - JUnit Tests
 
 JUnit is a framework for writing tests of your code. JUnit provides a very simple
