@@ -1,4 +1,4 @@
-# In-class Assignment 2
+# In-class Assignment
 
 ## Overview
 
