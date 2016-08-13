@@ -37,13 +37,7 @@ https://www.owasp.org/index.php/Top_10_2013-Top_10
 Each team member should choose 2-3 vulnerabilities, learn how they are exploited,
 and how they can be avoided. The team members should then take turns presenting
 the vulnerabilities that they studied to the other team members and discussing 
-them. When each team feels that it is ready, the team should call the instructor
-over to ask them 5 questions about the top 10 vulnerabilities. 
-
-Finally, after the questions are answered, each team member should fill out the
-software & security habits survey:
-
-http://goo.gl/forms/46KBIECVCS
+them. 
 
 ## Part 2 - Attacker - Defender
 
