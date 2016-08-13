@@ -35,7 +35,14 @@ https://www.youtube.com/watch?v=lA1n_HBrFwY&index=25&list=PLyUlngzGzkztgTizxM6_z
 
 Overview of HTTP (through 7) https://www.httpwatch.com/httpgallery/introduction/
 
+Introduction to Spring Boot https://spring.io/guides/gs/spring-boot/
+
+Spring Rest Services
+https://spring.io/guides/gs/rest-service/
+
 ## Before 9/20
+
+If you watch the videos at 2X, they should take about 45min to watch. At 1X, the videos will be 90min. The playback speed can be changed by clicking the gear in the bottom right of the player.
 
 What is a Cloud Service?
 https://www.youtube.com/watch?v=AKWnsW8vvqE
@@ -75,10 +82,6 @@ https://www.youtube.com/watch?v=IDP-O5VRBjI&list=PLyUlngzGzkztgTizxM6_zqiw8sRj7v
 Spring Dependency Injection Code Walkthrough
 https://www.youtube.com/watch?v=eRq6codSth4&list=PLyUlngzGzkztgTizxM6_zqiw8sRj7vBm0&index=42
 
-Introduction to Spring Boot https://spring.io/guides/gs/spring-boot/
-
-Spring Rest Services
-https://spring.io/guides/gs/rest-service/
 
 ## Before 9/27 
 
@@ -99,5 +102,14 @@ Micro Services Team Reading
 ## Before 10/18
 
 React Team Reading
+
+## Before 10/25
+
+OWASP Top 10 List Introduction
+https://www.owasp.org/index.php/Top_10_2013
+
+OWASP Top 10 List
+https://www.owasp.org/index.php/Top_10_2013-Top_10
+
 
 
