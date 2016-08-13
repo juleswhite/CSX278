@@ -1,4 +1,4 @@
-# In-class Assignment 2
+# In-class Assignment
 
 ## Overview
 
@@ -35,18 +35,6 @@ class. If you have an effective merging strategy, you should be able to complete
 assignment by the end of class and have no homework. If your merging strategy isn't
 thought through carefully, the assignment is going to take MUCH longer and your team
 will have homework.
-
-## Key Information
-
-Released: 8-28-14
-
-Due Date: 9-02-14
-
-Close Time: 11:00
-
-Requires Group Completion: Yes
-
-Total Groups: 4
 
 ## Part 0 - JUnit Tests
 
@@ -98,7 +86,9 @@ completing the following steps:
 2. The team should dream up N new features, where N = Floor(total members / 2),
    for the application. Each individual feature should be implementable by a fellow classmate
    in 5min or less.
-3. For each feature, one team member (e.g., each feature is assigned to a different person) 
+3. Each team must select a 3rd party library that will be used in at least 2 of their features
+   and add this library to build.gradle.
+4. For each feature, one team member (e.g., each feature is assigned to a different person) 
    must implement a JUnit test for the
    feature. The JUnit test __SHOULD NOT COMPILE AND/OR FAIL__ due to the missing implementation. 
    Creating a test before writing the actual implementation is known as test-driven
@@ -137,7 +127,7 @@ completing the following steps:
    compile yet, defines the expected behavior of the feature and its API / 
    interface. 
      
-4. Each team member that created a test for one of the features should now commit
+5. Each team member that created a test for one of the features should now commit
    the test to a new branch in the repository named:
     "/feat/firstname_lastname/groupX", where firstname is the test creator's first
     name without any middle initials, lastname is their last name without any 
@@ -155,7 +145,7 @@ completing the following steps:
     
     git push -u origin /feat/jules_white/group2
     
-5. When your group is done, please announce it.
+6. When your group is done, please announce it.
 
 ## Part 2 - Implementing the Behavior Defined in the Tests
 
