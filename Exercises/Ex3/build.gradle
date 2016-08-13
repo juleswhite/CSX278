@@ -1,0 +1,47 @@
+buildscript {
+	ext {
+		springBootVersion = '1.0.2.RELEASE'
+	}
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.2.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+    
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    compile("com.google.guava:guava:17.0")
+    compile("org.apache.commons:commons-lang3:3.3.2")
+    compile("commons-io:commons-io:2.4")
+    compile("commons-codec:commons-codec:1.9")
+    compile("commons-collections:commons-collections:3.2.1")
+   
+    compile("com.fasterxml.jackson.core:jackson-databind:2.4.2")
+	compile("com.squareup.retrofit:retrofit:1.6.1")
+	compile("joda-time:joda-time:2.3")
+
+    testCompile("junit:junit")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
+
