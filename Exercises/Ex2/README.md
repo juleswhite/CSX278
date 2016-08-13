@@ -54,13 +54,19 @@ When you have finished creating the schedules with the other teams, return to yo
 
 Using the schedules that were produced:
 
-1. Determine the latest completion date produced by any team for each item
-2. Determine the number of days between the latest completion date for each item and
-   your estimated completion date for the item
+1. Determine the latest completion date produced by any team for each requirement
+2. Determine the number of days between the latest completion date for each requirement and
+   your estimated completion date for the requirement (if it was your estimate, record 0)
 3. Assume that the later dates are correct
 4. Calculate how many days late your project was delivered
+5. Determine the earliest completion date produced by any team for each requirement
+6. Assume that the earlier dates are correct
+7. Determine the number of days between the earliest completion date for each requirement and
+   your estimated completion date for the requirement (if it was your estimate, record 0)
+8. Calculate how many days early your project was delivered
+9. Your score is the sum of #4 and #8
 
-The team with the lowest score wins.
+The team with the lowest score wins. The team with the lowest score gets a 5pt bonus on the next quiz.
 
 
   
