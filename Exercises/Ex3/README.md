@@ -1,234 +1,243 @@
-# In-class Assignment
+# Assignment 1
 
 ## Overview
 
-A challenging component of team software development is that individual
-developers inevitably make changes to code that conflict with the changes
-made by other developers. On any non-trivial project, there will be conflicts
-between developers' changes. This exercise is going to teach you distributed
-version control concepts to manage these conflicts and help to avoid them.
+In order to be an effective software developer, you need to understand the key tools
+of the trade for your particular programming language. For this course, all of the
+assignments will be in Java. This exercise will introduce you to the key tools that
+we will be using: Eclipse, Gradle, Git, the Eclipse Debugger, and JUnit. You should
+already be familiar with Eclipse basics from past courses.
 
-From your reading that was due today, you should understand the basics of
-distributed version control with Git and what branches are. In large teams,
-an effective way to isolate developer changes from other team members is to
-use feature branches. Each time a developer begins work on a new feature that
-could potentially affect other developers or the state of the "master" branch
-of the code, that developer creates a separate feature branch. The developer
-can work independently and commit changes to this feature branch without worrying
-about making changes that conflict with the changes made by other developers
-in their feature branches.
+Most real-world software engineering is done in teams. A team must work together to 
+succeed. Team members must not only work hard themselves, but help other teammates
+out as needed.
 
-For this in-class assignment, we are going to create a development scenario where
-feature branches are essential. We are going to take a small application with a
-tiny code base and every student in the class is going to make changes to that code
-base. Luckily, all of the changes are going to be made in separate feature branches
-so that they do not conflict with each other. The individual teams are then going
-to be responsible for merging ~15 of these feature branches into a single
-master branch for their group that compiles and passes all of the tests.
+You have been assigned to a group for this in-class assignment. Each member of each group
+needs to complete the assignment. The group is responsible for ensuring that all 
+team members both complete the in-class assignment and understand
+the material. Each team should derive a process for making sure that everyone in the
+group both completes the assignment and understands the material. 
 
-A good process is going to be essential to making all of this work. Before the merging
-starts, teams are going to have time to plan their merging strategy. It is essential
-that you use this time very wisely and think carefully about how you are going to both
-merge all of the branches and distribute the merging workload across your team members.
-The completely merged branches that compile and pass the tests are due before the next
-class. If you have an effective merging strategy, you should be able to complete the
-assignment by the end of class and have no homework. If your merging strategy isn't
-thought through carefully, the assignment is going to take MUCH longer and your team
-will have homework.
+## Step 0 - Setup Your Assignment
 
-## Part 0 - JUnit Tests
+Since the last class, you should have setup a development environment with Eclipse,
+Gradle, and Git.
+Clone this repository and import this project into Eclipse. If you aren't a Git
+expert yet, don't worry, the next class will give you hands-on experience with 
+Git.
 
-JUnit is a framework for writing tests of your code. JUnit provides a very simple
-interface for developers, you simply create a class with methods named testXYZ
-and annotate those methods with @Test. Each time that you right-click on a test
-class and Run As->JUnit, JUnit automatically discovers and runs each of these
-methods annotated with @Test. Inside of these test methods, you define your logic
-for the test and check that one or more conditions are met by adding assertXYZ
-statements, as shown below:
+__Do This:__ When you are done, find the org.magnum.cs278.bootstrapex. Student 
+class in the src/main/java folder and update all three variables exactly as described 
+in the comments. In particular, you must enter your name exactly as it appears in YES.
 
-   ```java   
-	package org.magnum.cs278.testdriven;
+## Step 1 - Running JUnit Tests
 
-	import static org.junit.Assert.*;
-	import org.junit.Test;
+A critical part of software engineering is performing automated testing of code. JUnit
+is a library that is commonly used to automate testing in Java. We will be using JUnit
+throughout the course. Today, we aren't going to dive into the details of JUnit yet, but you do need to know
+how to run JUnit tests in Eclipse. JUnit tests in a Gradle project are always going to
+be stored under the /src/test/java folder. 
 
-	public class TestAddition {
+__Do This:__ Find the BootstrapTest class under src/test/java, right-click->Run As->JUnit test. 
+Eclipse should run the test and display the results in the JUnit view. As you can 
+see, there were some test failures.
 
-        // A simple test method
-		@Test
-		public void testTwoPlusTwoEqualsFour() {
-			int sum = 2 + 2;
-			
-			// An assertion that is being checked
-			assertEquals(4, sum);
-			
-			// This will fail and generate an error in JUnit
-			assertTrue(sum == 5);
-		}
+## Step 2 - Understanding Gradle
 
-	} 
-   ```
-In this simple test, the "testTwoPlusTwoEqualsFour()" method will be invoked and JUnit
-will check all of the assertions. You can add JUnit tests in Eclipse by creating
-new classes in the project by right-clicking on a package in src/test/java, 
-New->Other->Java->JUnit->JUnit Test Case. Eclipse will automatically generate a barebones
-test for you. You can then add as many testXYZ methods annotated with @Test as you want.
+A build process is an automated assembly line for taking your source code and
+other artifacts and compiling, testing, and packaging them for distribution. A
+build process automates all of the manual steps of taking your code from its
+raw source format to the format that can be easily distributed to end customers
+and run. A build process can encompass a variety of steps ranging from compilation
+to documentation generation to actual copying of binaries to servers for deployment.
 
-## Part 1 - Creating New Features
+Gradle is a tool for automating Java build processes. By default, Gradle automatically
+compiles, tests, and packages your code if your project structure matches its 
+expectations. This class will introduce you to the basics of Gradle projects, 
+what Gradle does for you, and how you use Gradle to increase your productivity.
 
-You have been assigned to a team in the class dashboard. Please 
-assemble your team and begin the assignment. You should start by
-completing the following steps:
 
-1. Each team member should clone this repo: https://github.com/cs27x/in-class-2
-   and import the in-class-2 project into Eclipse as a Gradle project. Do not 
-   import the entire repository into Eclipse.
-2. The team should dream up N new features, where N = Floor(total members / 2),
-   for the application. Each individual feature should be implementable by a fellow classmate
-   in 5min or less.
-3. Each team must select a 3rd party library that will be used in at least 2 of their features
-   and add this library to build.gradle.
-4. For each feature, one team member (e.g., each feature is assigned to a different person) 
-   must implement a JUnit test for the
-   feature. The JUnit test __SHOULD NOT COMPILE AND/OR FAIL__ due to the missing implementation. 
-   Creating a test before writing the actual implementation is known as test-driven
-   development. For example, you might create the following test for a new feature 
-   to only display park permits after a particular date:
-
-   ```java   
-	package org.magnum.cs278.testdriven;
-
-	import java.util.List;
-
-	import static org.junit.Assert.*;
-	import org.joda.time.DateTime;
-	import org.junit.Test;
-
-	public class FilterParkPermitsAfterDateTest {
-
-		private App app = new App();
-	
-		@Test
-		public void test() {
-			DateTime now = DateTime.now();
-			List<Event> events = app.getParkSpecialPermitsAfterDate(now);
-		
-			for(Event event : events){
-				assertTrue(event.getDateTime().isAfter(now));
-			}
-		}
-	} 
-   ```
-   
-   The "app.getParkSpecialPermitsAfterDate(now);" line would generate a compile
-   error because that method doesn't exist yet and is part of the feature that
-   is being tested. This is part of test-driven development. You write the test
-   before writing the code to pass the test. The test, although it doesn't
-   compile yet, defines the expected behavior of the feature and its API / 
-   interface. 
-     
-5. Each team member that created a test for one of the features should now commit
-   the test to a new branch in the repository named:
-    "/feat/firstname_lastname/groupX", where firstname is the test creator's first
-    name without any middle initials, lastname is their last name without any 
-    IIs, IIIs, etc., and groupX is replaced by the group number (e.g., group2).
+__Gradle Project Structure__ - Gradle expects all of your code to be in a folder
+with sub folders following the following format:
+  - __project_dir/__
     
-    Example:  /feat/jules_white/group2
+    Every project should have a root directory that it lives beneath. 
+  
+  - __project_dir/build.gradle__
+  
+    Every project should have a build.gradle file in the root project directory.
+  
+  - __project_dir/src/main/java__
+  
+    The source code for your application lives beneath the src/main/java folder in
+    appropriately named folders reflecting the Java packages of the classes. If your
+    class "Foo" is in the package "org.cs278", then it would live in the file:
     
-    After you have committed your changes to the new branch, you must push the branch
-    to the remote repository so that it is accessible to other developers. If you create
-    the branch with:
+    project_dir/src/main/java/org/cs278/Foo.java
+  
+  - __project_dir/src/test/java__
+  
+    This folder contains the tests, such as JUnit tests, for your source code. 
     
-    git checkout -b /feat/jules_white/group2
+__The build.gradle File__ - Every time that Gradle is run, it looks for the build.gradle
+file in the root of your project. This file defines the build steps that are taken,
+what dependencies (e.g., JAR files) are needed to compile your code, and any other
+packaging steps that need to be taken. Gradle files are written in the Groovy scripting
+language. 99% of the time, you do not need to do much in a build.gradle file other than
+add the appropriate library dependencies that your application needs to be compiled.
+
+A simple build.gradle file is shown below:
+
+```java
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("com.google.guava:guava:17.0")
+    compile("org.apache.commons:commons-lang3:3.3.2")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+```
+
+The key section that you will edit in most project is the dependencies. This example
+is dependent on two libraries, "Guava" a great collection of utilities provided by
+Google, and "Commons Lang" another set of helpful utilities provide by Apache. When
+you run a build, Gradle goes and downloads these dependencies from a repository
+(e.g., mavenCentral() ), installs them into your project, and adds them to the classpath
+used by the compiler, Eclipse, and your tests. 
+
+You can search for dependencies that you need in the Maven Central repository here:
+http://mvnrepository.com/search.html?query=guava
+
+__Do This:__ Now, for the first step, use Maven Central to find the latest version of the "CGlib"
+or "Code Generation Library" library and add it to your build.gradle file as a dependency. 
+
+Each time that you make a change to your build.gradle file in Eclipse, you need to
+"refresh" it so that Eclipse will be updated with the changes. To update your build.gradle
+file, right-click on the project root folder->Gradle->Refresh All. Gradle will run, download any new dependencies,
+and then reconfigure your Eclipse project. Go ahead and refresh your build.gradle file
+to pickup the changes that you made.
+
+You now have completed a crash course in the basics of Gradle. You can find and add
+libraries to an existing Gradle file when you need to. You will be using Gradle throughout
+the course -- make sure that you ask __in class__ about anything that you are confused
+by.
     
-    You would then push the branch to the remote repo with:
-    
-    git push -u origin /feat/jules_white/group2
-    
-6. When your group is done, please announce it.
+__How to Start a New Project__ - Most new projects will have similar build requirements
+to a past project. To start a new project, you should *ideally* identify an existing
+project that already performs the build steps that you want, copy its project root
+directory, remove all of the source code under /src/main/java, /src/test/java, etc., 
+and then remove any unneeded dependencies from the build.gradle file. You can then
+import this project into Eclipse to get started on a new project and begin adding your
+code to /src/main/java, etc.
 
-## Part 2 - Implementing the Behavior Defined in the Tests
+## Step 3 - Using the Eclipse Console and Reading Stack Traces
 
-1. When all of the teams are done, each team will be assigned another team's features
-   to implement.
+To run the application that you imported, right-click on the App class beneath /src/main/java
+and Run As->Java Application. If the Eclipse Console view is not already open, open it via
+Window->Show View->Console. You should see an error, called a Java stack trace, printed in the
+console. 
+
+A stack trace displays the chain of method invocations that produced an exception. Knowing how
+to read stack traces is very important and usually simple. Below is an example stack trace:
+
+```
+Exception in thread "main" java.lang.IllegalStateException: A book has a null property
+        at com.example.myproject.Author.getBookIds(Author.java:38)
+        at com.example.myproject.Bootstrap.main(Bootstrap.java:14)
+Caused by: java.lang.NullPointerException
+        at com.example.myproject.Book.getId(Book.java:22)
+        at com.example.myproject.Author.getBookIds(Author.java:35)
+        ... 1 more
+```
+
+A stack trace will either have a direct cause or a series of causes. If an exception A1
+causes an exception A2 to be thrown, Java will print out A2 as being "caused by" A1. When
+you are reading stack traces, you usually want to start by finding the root cause, which will
+be the "caused by" that is farthest down in the list. In the example above, a NullPointerException
+caused another part of the code to throw an IllegalStateException. The real exception that the
+developer needs to debug is the NullPointerException. If there is only a single exception thrown,
+only that exception will be listed and no "caused by" will be printed.
+
+The stack trace displays the exact methods and line numbers that were executing when the exception
+was thrown. In the example above, line 22 in Book.java was the place where the NullPointerException
+was thrown. You should always refer to these line numbers to find the exact location where an error
+occurred.
+
+__Do This:__ After running the App class again, look at the Eclipse Console and find the stack trace that
+was printed. Write down the full class name (e.g., include the package name) of the class that
+generated the exception and the line number where the exception was thrown. Then, open the
+BootstrapTest.testStep3() method in the src/test/java folder and update the thrower and line
+number variables. You will need to provide the class object, not the string name, of the 
+thrower. If you noticed that "com.foo.Foo" generated the exception, then you would refer to
+this class' class object as follows:
+
+```
+thrower = com.foo.Foo.class;
+```
+
+When you are done, run the BootstrapTest JUnit test again to check if you correctly found
+the source of the exception. Also, running the JUnit test will update your progress on the
+assignment.
+
+## Step 4 - Using the Eclipse Debugger
+
+Inevitably, you will write code with bugs. Great programmers are intimately familiar with
+how to use the debugger for their particular language of choice. Eclipse has a
+fantastic debugger that you will learn the basics of in this step. 
+
+The most fundamental concept in debugging is the idea of a breakpoint. A breakpoint is
+a location in the code where you would like to have the program's execution pause so that
+you can inspect the variable values, see where the call came from, or walk step by step
+through the remaining lines. When you open a Java source file in Eclipse, there is a small 
+gray or blue bar on the  left-hand side of the editor. You can double click in this area 
+next to any line of code in a Java file to set a breakpoint. Once you have set a breakpoint,
+you can run your application and have it pause there by right-clicking on your main class->
+Debug As->Java Application. The program will execute until it hits your breakpoint and then
+pause and ask you if you want to switch to the debugging view. 
+
+Go ahead and open the BootstrapTest again and add a breakpoint next to this line of code
+in testStep3():
+
+```java
+App.main(null);
+```
+
+Now, right-click on the BootstrapTest->Debug As->JUnit Test to run the code in the debugger
+and see it stop at your breakpoint. When your breakpoint is hit, Eclipse will ask you if
+you want to switch to the debugging perspective. Select yes and Eclipse should open up
+a new set of views. In the upper left corner, you should see the stack of method calls
+that leading up to the method where the breakpoint was set. You can click on any of the
+methods in the stack to navigate to them. In the upper right hand corner, you can see the
+list of variables that are currently in scope and their values. If a variable is a class with
+member variables, you can expand it to see the member variable values. 
+
+After a breakpoint is hit, you can use the play, stop, and other controls on the top toolbar
+to control the execution of the application. The play button will continue running the application
+until the next breakpoint is hit. The stop button will terminate the application. The "step into"
+button allows you to advance the execution of the debugger into a method call. Go ahead and hit the
+"step into" button and you should see the program execution continue into the main() method and
+open up the corresponding line of code. Now, use the "step over" button to advance the execution
+of the application without diving into the next method invocation to the wrap() method. 
+
+__Do This:__ At this point, you should know the basics of using the debugger to stop the execution of your
+program, inspect variable values, and step through the code. To complete the assignment, use
+your knowledge of reading stack traces and using the debugger to find the bug in the current
+application. Once you have found the bug, which is a simple typo, fix the bug and run the 
+BootstrapTest to ensure that you have fixed it correctly. The Bootstrap test will also update
+your progress and hand-in your assignment so that you get credit. To get started, you might
+want to put a breakpoint at or immediately before the line that is throwing the exception when
+you run the App class.
+
+__Good luck!__
    
-2. Each team member that did not implement a test will now implement the code / changes
-   needed to pass the test produced by the other team. If there are syntax or other errors
-   in the test that are not related to non-existant code (e.g., someone forgot a semi-colon),
-   you should comment on the issue and fix it. You should implement only the code needed
-   to make the test pass. For the previous test, you might add this code to the App
-   class:
-
-   ```java     
-   	public List<Event> getParkSpecialPermitsAfterDate(DateTime now) throws Exception {
-		List<Event> toDo = new ArrayList<Event>();
-		List<Event> evts = getParkSpecialPermits();
-
-		for (Event evt : evts) {
-			if (evt.getDateTime().isAfter(now)) {
-				toDo.add(evt);
-			}
-		}
-
-		return toDo;
-	}
-   ```
-   
-3. When you are done with the implementation and the test passes, you should commit your
-   changes to a new branch "/impl/test_creator_firstname_lastname/firstname_lastname/groupX"
-   and push the branch to the remote repo. If Bob Jones created the test
-   that Jules White is implementing and Jules is on team 3, he would use the branch:
-   
-   /impl/bob_jones/jules_white/group3
-   
-4. When all of the features assigned to your team have been implemented, please announce
-   that your team is done.
-   
-## Part 3 - Designing a Merge Strategy
-   
-At this point, we should see ~30 branches like:
-
-feat/jules_white/group1
-
-feat/joe_porter/group2
-
-impl/jules_white/joe_porter/group2
-
-impl/joe_porter/jules_white/group1
-
-...
-
-Your team should create a groupX_master branch and push it to the remote repo. After
-adding this branch to the remote repo, do the following:
-
-1. Take 5min to define a process for merging the ~15 "impl" branches into your master
-   branch. Your strategy should be fair and not simply be "Jennifer will do it." 
-   Grading on the assignment will consider individual contributions to the team.
-2. Take 3min to draw your strategy on the board
-3. When you are done, we will discuss the strategies
-
-## Part 4 - Merging
-
-Use your strategy to completely merge the code into your groupX_master
-branch and get all of the tests to pass. 
-
-## Part 5 - Refactoring
-
-Each team member should suggest one refactoring [http://martinfowler.com/books/refactoring.html] 
-or improvement to the merged code. Each refactoring should be "suggested" by creating a branch named
-"refactoring/firstname_lastname/groupX", applying the suggested refactoring, pushing the
-branch to the remote repo, and then opening a pull request [https://help.github.com/articles/using-pull-requests]
-for your teammates to review the refactoring. Your team should devise and use a process for 
-reviewing and merging these pull requests into its groupX_master branch. Someone other than the
-creator of the pull request must merge it. One way to accomplish this would be to have all team members
-submit their pull requests and then stop and discuss each one as a group before merging it.
-
-At the end of Part 5, all of the teams should have merged all of the features into their groupX_master
-branches and refactored these branches via merging a series of pull requests from submitted by each
-team member. Each team will have successfully emulated a large team-based software development,
-integration, and refactoring process in a super-condensed timeframe. Every team member should have gained
-basic familiarity with Git, testing, implementing features, merging / integrating work, and refactoring
-to fix inherent inefficiencies that show up in distributed development. 
-
-__Question: How hard would it have been to integrate these features and refactor without tests?__
-
