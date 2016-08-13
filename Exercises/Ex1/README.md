@@ -12,33 +12,16 @@ Most real-world software engineering is done in teams. A team must work together
 succeed. Team members must not only work hard themselves, but help other teammates
 out as needed.
 
-You have been assigned to a group for this in-class assignment. You can see your group
-by going to [https://cs278.magnum.io/view/dashboard/dashboard.html]. You will be
-provided with the login credentials for the dashboard in class. Please login, enter
-your name as it appear in YES, and then go to the team page for the members of your
-team. 
-
-Each member of each group needs to complete the assignment. The group is responsible
-for ensuring that all team members both complete the in-class assignment and understand
+You have been assigned to a group for this in-class assignment. Each member of each group
+needs to complete the assignment. The group is responsible for ensuring that all 
+team members both complete the in-class assignment and understand
 the material. Each team should derive a process for making sure that everyone in the
 group both completes the assignment and understands the material. 
-
-## Key Information
-
-Released: 8-26-14
-
-Due Date: 8-26-14
-
-Close Time: 12:25
-
-Requires Group Completion: Yes
-
-Total Groups: 4
 
 ## Step 0 - Setup Your Assignment
 
 Since the last class, you should have setup a development environment with Eclipse,
-Gradle, and Git per the course setup guide: https://vanderbilt.coursera.org/cs278-001/wiki/Installing_Eclipse%2C_Git%2C_and_Gradle.
+Gradle, and Git.
 Clone this repository and import this project into Eclipse. If you aren't a Git
 expert yet, don't worry, the next class will give you hands-on experience with 
 Git.
@@ -141,7 +124,7 @@ or "Code Generation Library" library and add it to your build.gradle file as a d
 
 Each time that you make a change to your build.gradle file in Eclipse, you need to
 "refresh" it so that Eclipse will be updated with the changes. To update your build.gradle
-file, right-click on it->Gradle->Refresh All. Gradle will run, download any new dependencies,
+file, right-click on the project root folder->Gradle->Refresh All. Gradle will run, download any new dependencies,
 and then reconfigure your Eclipse project. Go ahead and refresh your build.gradle file
 to pickup the changes that you made.
 
