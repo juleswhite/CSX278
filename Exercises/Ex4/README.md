@@ -1,10 +1,12 @@
-# Assignment 2
 
 ## Overview
 
 This assignment will test your ability to test. The provided code is for a half-baked
-Dropbox implementation. Your goal is to create a comprehensive set of tests for the
-code base and a report detailing what works and what doesn't. Your test infrastructure
+Dropbox implementation. The original developers quit for higher paying jobs at Facebook
+and have left you with this code base. Your goal is to create a comprehensive set of tests for the
+code base and a report detailing what works and what doesn't. If you don't do a thorough
+job, your boss will assume that later bugs are your fault and put you on a performance
+improvement plan (a precursor to being "let go to explore other career options"). Your test infrastructure
 should cover as much of the code base as possible and as many use cases as possible.
 In your report, when detailing something that doesn't work, you must provide the fully
 qualified class name of your JUnit test and the test method that demonstrates the flaw.
@@ -22,6 +24,13 @@ The half-baked Dropbox app is launched by starting a first computer to act as th
 primary server and then one or more clients that connect to the server. You provide
 a directory that you want the server and each client to watch and they automatically
 synchronize the files in their watched directories. 
+
+### Fix the Broken Build
+
+Before leaving, the old developers checked in a version of the application that didn't
+build correctly. It appears that they added some dependencies to the build.gradle file
+but forgot to check-in the updated version. Your first task is to figure out what dependencies
+are missing from the build.gradle file and add them so that the application compiles.
 
 ### Start the Dropbox Server
 
