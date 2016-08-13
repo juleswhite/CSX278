@@ -9,12 +9,7 @@ repositories {
 }
 
 dependencies {
-	// https://mvnrepository.com/artifact/com.hazelcast/hazelcast
-	compile group: 'com.hazelcast', name: 'hazelcast', version: '3.6.4'
-	// https://mvnrepository.com/artifact/org.mockito/mockito-all
-	compile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
-	// https://mvnrepository.com/artifact/commons-io/commons-io
-	compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
 
     testCompile 'junit:junit:4.12'
 }
