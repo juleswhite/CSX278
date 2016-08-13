@@ -7,7 +7,7 @@ These exercises will give you an appreciation of how hard requirements are so th
 approach them with the appropriate respect. The most important thing to understand about
 requirements is that you don't understand them even when you think you do. Ask questions. 
 
-## The Waterfall Game
+## The Waterfall Drawing Game
 
 Each team has been provided with a picture. You must keep this picture secret and not show it
 to any other teams. The goal of the game is to provide written instructions to another team
