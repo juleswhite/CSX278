@@ -1,8 +1,4 @@
-# Assignment 2 Covering Lectures in Weeks 2-3
-
-## Running the Application
-
-__You do not use "jettyRun" to launch this application. Please read these instructions__
+# Spring Boot Exercise 
 
 To run the application:
 
