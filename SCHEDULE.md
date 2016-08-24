@@ -32,9 +32,9 @@
 18.	Oct 25 - Team Project Proposal Presentations
 19.	Oct 27 – Individual Group Meetings
 20.	Nov 1 – Individual Group Meetings
-21.	Nov 3 – Wireframe + Technical Architecture Presentations to Mentors
-22.	Nov 8 – Wireframe + Technical Architecture Presentations to Mentors
-23.	Nov 10 – MVP Team Work Day
+21.	Nov 3 – Wireframe + Technical Architecture Presentations
+22.	Nov 8 – In-class Development on Projects
+23.	Nov 10 – In-class Development on Projects
 24.	Nov 15 – Group Code Reviews
 25.	Nov 17 – MVP Demos
 26.	Nov 22 – Thanksgiving
