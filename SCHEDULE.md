@@ -1,8 +1,11 @@
+# Course Schedule
+
 1.	Aug 25 – Class Overview
 	- Asgn 0 out
-    - All reading out
+        - All reading out
 2.	Aug 30 – Requirements in-class exercises 
 	- Team formation
+	- Asgn 1 out
 3.	Sep 1 – Topic Selection & Quiz 
 4.	Sep 6 
 	- UNIV Students - UNIV Mentor Presentation
@@ -16,8 +19,8 @@
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Testing in-class exercise
 9.	Sep 22 
-    - UNIV Students - UNIV Mentor Presentation
-    - CS Students - Spring Boot Web Application, Dependency Injection, Logging
+        - UNIV Students - UNIV Mentor Presentation
+        - CS Students - Spring Boot Web Application, Dependency Injection, Logging
 10.	Sep 27 - JHipster Team Assignment
 11.	Sep 29 – Docker Team Assignment
 12.	Oct 4 - JHipster Microservices Team Assignment
