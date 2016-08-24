@@ -1,6 +1,6 @@
 # Reading
 
-## Before 8/30
+## Before 8/30 - UNIV & CS Students
 
 Brooks No Silver Bullet https://github.com/juleswhite/cs27x/blob/master/reading_materials/Brooks_No_Silver_Bullet.pdf
 
@@ -10,7 +10,7 @@ Martin Fowler on Agile Methods http://martinfowler.com/articles/newMethodology.h
 
 User Stories https://www.mountaingoatsoftware.com/agile/user-stories
 
-## Before 9/6
+## Before 9/6 - CS Students
 
 Git (through 3.5) https://git-scm.com/book/en/v1/Getting-Started-About-Version-Control
 
@@ -24,7 +24,7 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
 
 Java Collections (Maps / Lists) http://docs.oracle.com/javase/tutorial/collections/
 
-## Before 9/13
+## Before 9/13 - CS Students
 
 Java Generics http://docs.oracle.com/javase/tutorial/java/generics/index.html
 
@@ -40,7 +40,7 @@ Introduction to Spring Boot https://spring.io/guides/gs/spring-boot/
 Spring Rest Services
 https://spring.io/guides/gs/rest-service/
 
-## Before 9/20
+## Before 9/20 - CS Students
 
 If you watch the videos at 2X, they should take about 45min to watch. At 1X, the videos will be 90min. The playback speed can be changed by clicking the gear in the bottom right of the player.
 
@@ -83,27 +83,27 @@ Spring Dependency Injection Code Walkthrough
 https://www.youtube.com/watch?v=eRq6codSth4&list=PLyUlngzGzkztgTizxM6_zqiw8sRj7vBm0&index=42
 
 
-## Before 9/27 
+## Before 9/27 - CS Students
 
 JHipster Team Reading
 
-## Before 9/29
+## Before 9/29 - CS Students
 
 Docker Team Reading
 
-## Before 10/4
+## Before 10/4 - CS Students
 
 ELK Team Reading
 
-## Before 10/6
+## Before 10/6 - CS Students
 
 Micro Services Team Reading
 
-## Before 10/18
+## Before 10/18 - CS Students
 
 React Team Reading
 
-## Before 10/25
+## Before 10/25 - CS Students
 
 OWASP Top 10 List Introduction
 https://www.owasp.org/index.php/Top_10_2013
