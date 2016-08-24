@@ -2,7 +2,7 @@
 
 1.	Aug 25 – Class Overview
 	- Asgn 0 out
-        - All reading out
+	- All reading out
 2.	Aug 30 – Requirements in-class exercises 
 	- Team formation
 	- Asgn 1 out
@@ -10,19 +10,19 @@
 4.	Sep 6 
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Using a debugger & understanding stack traces
-5.	Sep 8 – Estimation in-class exercise
-6.	Sep 13 - TIPS Mentor Presentation
-7.	Sep 15 – 
+5.	Sept 8 – Estimation in-class exercise
+6.	Sept 13 - TIPS Mentor Presentation
+7.	Sept 15 – 
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Git & Git whole class merge exercise
-8.	Sep 20
+8.	Sept 20
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Testing in-class exercise
-9.	Sep 22 
-        - UNIV Students - UNIV Mentor Presentation
-        - CS Students - Spring Boot Web Application, Dependency Injection, Logging
-10.	Sep 27 - JHipster Team Assignment
-11.	Sep 29 – Docker Team Assignment
+9.	Sept 22 
+	- UNIV Students - UNIV Mentor Presentation
+	- CS Students - Spring Boot Web Application, Dependency Injection, Logging
+10.	Sept 27 - JHipster Team Assignment
+11.	Sept 29 – Docker Team Assignment
 12.	Oct 4 - JHipster Microservices Team Assignment
 13.	Oct 6 – ELK Team Assignment  
 14.	Oct 11 – Team Bidding on Mentor Projects
