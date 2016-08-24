@@ -1,11 +1,26 @@
 # Overview
 
+One of the most powerful ways to learn about software engineering is to build and ship a software product to real users. Unfortunately, it is not possible to build a product, find real users, and support it within the course of the semester (at least for mere mortals). This assignment is designed to give you the experience of shipping and supporting a real product but in a much more condensed time frame.
+
+For this assignment, your team will be building an assignment that the other students in the class will have to complete. Each team will select a topic from the list below and develop a set of learning materials for the topic (e.g., outside reading, exercises, etc.), an assignment to apply the topic, and a process for supporting the learning materials and assignment. Each team will be playing the role of instructor, grader, and mentor for their topic. Your fellow classmates will be your users.
+
+Be warned, this assignment will be hard. Designing, building, shipping, and supporting a product is hard. You will be developing an educational product and shipping it to real students.
+
+## Deadlines
+
+  1. 9/8 -- Outside learning materials sent to the course repo (must be outlined in a README.md file) as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below 
+  2. 9/13 -- Changes to reading materials based on instructor feedback on your pull request
+  3. 9/18 -- Written assignment specification added to your README.md file and sent to the course repo as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below 
+  4. 9/23 -- Changes to written assignment specification based on comments in your pull request
+  4. 9/23 -- Supporting code artifacts for your assignment, if any, sent to the course repo as a pull request for "Assignments/AsgnX/Code", where X is the assignment number for your topic listed below 
+  5. 1-week prior to your assignment's launch in class -- Automated tests delivered to TA
+
 ## Topics
-  1. JHipster - Assignment in class on 9/27
-  2. Elasticsearch, Logstash, and Kibana - Assignment in class on 9/29
-  3. Docker - Assignment in class on 10/4
-  4. JHipster Microservices - Assignment in class on 10/6
-  5. React - Assignment in class on 10/18
+  1. JHipster - Assignment 2 in class on 9/27
+  2. Elasticsearch, Logstash, and Kibana - Assignment 3 in class on 9/29
+  3. Docker - Assignment 4 in class on 10/4
+  4. JHipster Microservices - Assignment 5 in class on 10/6
+  5. React - Assignment 6 in class on 10/18
 
 ## Applied Skills
 
