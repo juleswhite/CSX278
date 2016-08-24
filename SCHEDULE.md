@@ -3,7 +3,6 @@
 1.	Aug 25 – Class Overview
 	- Asgn 0 Out
 	- All Reading Out
-	- Ungraded Java Quiz
 2.	Aug 30 – Requirements In-class Exercises 
 	- Team Formation
 	- Asgn 1 Out
