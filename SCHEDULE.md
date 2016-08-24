@@ -1,25 +1,28 @@
+# Course Schedule
+
 1.	Aug 25 – Class Overview
-	- Asgn 0 out
-    - All reading out
-2.	Aug 30 – Requirements in-class exercises 
-	- Team formation
+	- Asgn 0 Out
+	- All Reading Out
+2.	Aug 30 – Requirements In-class Exercises 
+	- Team Formation
+	- Asgn 1 Out
 3.	Sep 1 – Topic Selection & Quiz 
 4.	Sep 6 
 	- UNIV Students - UNIV Mentor Presentation
-	- CS Students - Using a debugger & understanding stack traces
-5.	Sep 8 – Estimation in-class exercise
-6.	Sep 13 - TIPS Mentor Presentation
-7.	Sep 15 – 
+	- CS Students - Using a Debugger, Working with Build Systems, & Understanding Stack Traces
+5.	Sept 8 – Estimation In-class Exercise
+6.	Sept 13 - TIPS Mentor Presentation
+7.	Sept 15 – 
 	- UNIV Students - UNIV Mentor Presentation
-	- CS Students - Git & Git whole class merge exercise
-8.	Sep 20
+	- CS Students - Git & Git Whole Class Merge Exercise
+8.	Sept 20
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Testing in-class exercise
-9.	Sep 22 
-    - UNIV Students - UNIV Mentor Presentation
-    - CS Students - Spring Boot Web Application, Dependency Injection, Logging
-10.	Sep 27 - JHipster Team Assignment
-11.	Sep 29 – Docker Team Assignment
+9.	Sept 22 
+	- UNIV Students - UNIV Mentor Presentation
+	- CS Students - Spring Boot Web Application, Dependency Injection, Logging
+10.	Sept 27 - JHipster Team Assignment
+11.	Sept 29 – Docker Team Assignment
 12.	Oct 4 - JHipster Microservices Team Assignment
 13.	Oct 6 – ELK Team Assignment  
 14.	Oct 11 – Team Bidding on Mentor Projects
@@ -29,9 +32,9 @@
 18.	Oct 25 - Team Project Proposal Presentations
 19.	Oct 27 – Individual Group Meetings
 20.	Nov 1 – Individual Group Meetings
-21.	Nov 3 – Wireframe + Technical Architecture Presentations to Mentors
-22.	Nov 8 – Wireframe + Technical Architecture Presentations to Mentors
-23.	Nov 10 – MVP Team Work Day
+21.	Nov 3 – Wireframe + Technical Architecture Presentations
+22.	Nov 8 – In-class Development on Projects
+23.	Nov 10 – In-class Development on Projects
 24.	Nov 15 – Group Code Reviews
 25.	Nov 17 – MVP Demos
 26.	Nov 22 – Thanksgiving
