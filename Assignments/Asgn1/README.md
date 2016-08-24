@@ -1,6 +1,6 @@
 # Overview
 
-One of the most powerful ways to learn about software engineering is to build and ship a software product to real users. Unfortunately, it is not possible to build a product, find real users, and support it within the course of the semester (at least for mere mortals). This assignment is designed to give you the experience of shipping and supporting a real product but in a much more condensed time frame.
+One of the most powerful ways to learn about software engineering is to build and ship a software product to real users. Unfortunately, it is not possible to build a product, find real users, and support it within the course of the semester (at least for mere mortals). This assignment is designed to give you the experience of shipping and supporting a real product, but in a much more condensed time frame.
 
 For this assignment, your team will be building an assignment that the other students in the class will have to complete. Each team will select a topic from the list below and develop a set of learning materials for the topic (e.g., outside reading, exercises, etc.), an assignment to apply the topic, and a process for supporting the learning materials and assignment. Each team will be playing the role of instructor, grader, and mentor for their topic. Your fellow classmates will be your users.
 
@@ -8,18 +8,23 @@ Be warned, this assignment will be hard. Designing, building, shipping, and supp
 
 ## Deadlines
 
-  1. 9/8 -- Outside learning materials sent to the course repo (must be outlined in a README.md file) as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below 
+  1. 9/8 -- Outside learning materials (with an acknowledgement section describing what outside advisers you used to select the reading material) sent to the course repo (must be outlined in a README.md file) as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below
+  2. 9/11 -- Results of beta test of outside reading materials emailed to TA and instructor
+  3. 9/12 -- Quiz emailed as a PDF to TA for feedback
   2. 9/13 -- Changes to reading materials based on instructor feedback on your pull request
   3. 9/18 -- Written assignment specification added to your README.md file and sent to the course repo as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below 
+  4. 9/20 -- Results of beta test of assignment specification emailed to TA and instructor
   4. 9/23 -- Changes to written assignment specification based on comments in your pull request
   4. 9/23 -- Supporting code artifacts for your assignment, if any, sent to the course repo as a pull request for "Assignments/AsgnX/Code", where X is the assignment number for your topic listed below 
   5. 1-week prior to your assignment's launch in class -- Automated tests delivered to TA
+  6. 1-week prior to your assignment's launch in class -- Software install instructions added to your README.md via pull request
+  6. 1-week prior to your assignment's launch in class -- post your team's office hours on Piazza
 
 ## Topics
   1. JHipster - Assignment 2 in class on 9/27
-  2. Elasticsearch, Logstash, and Kibana - Assignment 3 in class on 9/29
-  3. Docker - Assignment 4 in class on 10/4
-  4. JHipster Microservices - Assignment 5 in class on 10/6
+  3. Docker - Assignment 3 in class on 9/29
+  4. JHipster Microservices - Assignment 4 in class on 10/4
+  5. Elasticsearch, Logstash, and Kibana - Assignment 5 in class on 10/6
   5. React - Assignment 6 in class on 10/18
 
 ## Applied Skills
@@ -63,7 +68,7 @@ Be warned, this assignment will be hard. Designing, building, shipping, and supp
   13. Part of the assignment must be completed outside of class so that classmates can
      apply the knowledge on their own.
   14. You must hold two office hour sections in the Featheringill Hall Atrium of an hour each so that classmates can get help
-     while they are learning the material and while they are completing the assignment.
+     while they are learning the material and while they are completing the assignment. 
   15. One of the office hour sections should be held 2-3 days before the outside reading materials
       are due so that students can ask questions about what they are reading.
   16. One of the office hour sections should be held the day after you present your assignment in class
@@ -90,13 +95,16 @@ Be warned, this assignment will be hard. Designing, building, shipping, and supp
   24. You must produce a quiz that is coding oriented that can be completed in 20 minutes by your peers to
       demonstrate knowledge of the material and deliver the quiz in Word format to the TA so that they can
       give it if they choose to at some point in the course.   
+  25. Realize that these requirements may be vague, contradictory, insufficient, or otherwise flawed and that
+      EARLY interaction with the TA or instructor to clarify them is essential.
+  26. Be prepared to accept requirement changes throughout the assignment.
 
 ## Topic-specific Requirements
 
 ### JHipster
 
   1. The assignment must include completion of a functioning Spring Boot application that stores data using
-     a persistent H2 database so that it is easy to setup and run on a classmate's computer.
+     a persistent database so that it is easy to setup and run on a classmate's computer.
   2. The assignment must include creation of at least two entities with relationships to other entities so
      that your classmates know how to create relationships in JHipster.
   3. The assignment must include the use of JDL-studio so that your classmates can use a UML-like language
@@ -160,7 +168,7 @@ Be warned, this assignment will be hard. Designing, building, shipping, and supp
 
 ### JHipster Microservices
   
-  1. The assignment must include the creation of at least two services that store entities in a persistent  
+  1. The assignment must include the creation of at least two separate services that store entities in a persistent  
      database so that your classmates know how to create and compose multiple services.
   2. The assignment must include the creation of a gateway that provides a front-end for the services that 
      your assignment requires creating so that your classmates know how to generate a UI for existing services.
