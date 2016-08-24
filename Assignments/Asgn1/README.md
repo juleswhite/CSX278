@@ -8,7 +8,8 @@ Be warned, this assignment will be hard. Designing, building, shipping, and supp
 
 ## Deadlines
 
-  1. 9/8 -- Outside learning materials (with an acknowledgement section describing what outside advisers you used to select the reading material) sent to the course repo (must be outlined in a README.md file) as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below
+  1. 8/31 -- Email sent to instructor with topic preferences as a sorted list and any rationale of why the instructor should select your team for a specific topic
+  2. 9/8 -- Outside learning materials (with an acknowledgement section describing what outside advisers you used to select the reading material) sent to the course repo (must be outlined in a README.md file) as a pull request for "Assignments/AsgnX", where X is the assignment number for your topic listed below
   2. 9/11 -- Results of beta test of outside reading materials emailed to TA and instructor
   3. 9/12 -- Quiz emailed as a PDF to TA for feedback
   2. 9/13 -- Changes to reading materials based on instructor feedback on your pull request
