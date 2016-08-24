@@ -1,20 +1,20 @@
 # Course Schedule
 
 1.	Aug 25 – Class Overview
-	- Asgn 0 out
-	- All reading out
-2.	Aug 30 – Requirements in-class exercises 
-	- Team formation
-	- Asgn 1 out
+	- Asgn 0 Out
+	- All Reading Out
+2.	Aug 30 – Requirements In-class Exercises 
+	- Team Formation
+	- Asgn 1 Out
 3.	Sep 1 – Topic Selection & Quiz 
 4.	Sep 6 
 	- UNIV Students - UNIV Mentor Presentation
-	- CS Students - Using a debugger & understanding stack traces
-5.	Sept 8 – Estimation in-class exercise
+	- CS Students - Using a Debugger, Working with Build Systems, & Understanding Stack Traces
+5.	Sept 8 – Estimation In-class Exercise
 6.	Sept 13 - TIPS Mentor Presentation
 7.	Sept 15 – 
 	- UNIV Students - UNIV Mentor Presentation
-	- CS Students - Git & Git whole class merge exercise
+	- CS Students - Git & Git Whole Class Merge Exercise
 8.	Sept 20
 	- UNIV Students - UNIV Mentor Presentation
 	- CS Students - Testing in-class exercise
