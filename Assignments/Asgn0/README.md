@@ -24,5 +24,5 @@ Due: Monday at 11:59pm
     -  You do NOT need Netbeans
 12.	Download and install Android Studio
 13.	Download and install Gradle from: https://gradle.org/ and add it to your path (you should be able to type "gradle" on the command line)
-14.	Make sure you know how to use a terminal or the Git Bash Shell to do basic Unix commands, Tutorials One-Four up to wildcards: http://www.ee.surrey.ac.uk/Teaching/Unix/
+14.	Make sure you know how to use a terminal or the Git Bash Shell to do basic Unix commands by about the 3rd week of class, roughly equivalent knowledge to tutorials One-Four up to wildcards: http://www.ee.surrey.ac.uk/Teaching/Unix/
 	
