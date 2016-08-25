@@ -17,7 +17,7 @@ Due: Monday at 11:59pm
 5.	You must use the Git command line and not a Gui interface for this course
 6.	Clone the course repository from: https://github.com/juleswhite/CSX278
 7.	Clone your own newly created repo
-8.	Add a new folder named “Solutions/Asgn0” to your repo and a README.md file to the impl folder
+8.	Add a new folder named “Solutions/Asgn0” to your repo and a README.md file to the "Solutions/Asgn0" folder
 9.	Commit your new folder and README file 
 10.	Create a new “dev” branch in your repo and set it up as a remote tracking branch
 11.	Download and install Eclipse Standard (http://www.eclipse.org/downloads/) and the Java 8 JDK (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
