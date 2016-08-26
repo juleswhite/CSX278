@@ -19,7 +19,7 @@ Due: Monday at 11:59pm
 7.	Clone your own newly created repo
 8.	Add a new folder named “Solutions/Asgn0” to your repo and a README.md file to the "Solutions/Asgn0" folder
 9.	Commit your new folder and README file 
-10.	Create a new “dev” branch in your repo and set it up as a remote tracking branch
+10.	Create a new “dev” branch in your repo, set it up as a tracking branch, and push the branch to the server so that you can see it in the list of branches in GitHub 
 11.	Download and install Eclipse Standard (http://www.eclipse.org/downloads/) and the Java 8 JDK (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
     -  You do NOT need Netbeans
 12.	Download and install Android Studio
