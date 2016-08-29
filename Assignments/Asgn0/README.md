@@ -10,7 +10,7 @@ Due: Monday at 11:59pm
 
 1.	Download and install Git: http://git-scm.com/downloads -- Windows users MUST setup the Git Bash Shell
 2.	Create a GitHub account here: https://github.com/
-3.	Create a public Git repository and send the HTTPS clone URL to the TA in an email  (TA email address: ).
+3.	Create a public Git repository and send the HTTPS clone URL to the TA in an email  (TA email address: lauren.e.buck.1@vanderbilt.edu).
     -  Your email subject should be EXACTLY: “CSX278 GitHub Repo”
     -  Make sure and put your name and preferred email address in the email
 4.	(Google or look at the week 2 Git reading if you are unsure of how to complete steps 5-9)
