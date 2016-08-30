@@ -27,19 +27,20 @@ purely textual.
 This game will proceed similarly to the last one. However, this game modifies the rules in the following
 ways:
 
-  1. You have 5 minutes to create your instructions
-  2. You will exchange instructions with another team
-  3. One team will draw a picture based on the instructions while the other team watches
-  4. Before the round begins, the drawing team has 2 minutes to ask any questions that they would like
-  5. At the 2 minute mark, drawing will be paused and the drawing team has another 1 minute to ask any questions
-  6. The drawing team will have another 2 minutes to complete the drawing 
-  7. The teams will switch roles and repeat the process
+  1. Exchange pictures with the team from the previous iteration
+  2. You have 5 minutes to create your instructions
+  3. You will exchange instructions with another team other than the team that you worked with in the first exercise
+  4. One team will draw a picture based on the instructions while the other team watches
+  5. Before the round begins, the drawing team has 2 minutes to ask any questions that they would like
+  6. At the 2 minute mark, drawing will be paused and the drawing team has another 1 minute to ask any questions
+  7. The drawing team will have another 2 minutes to complete the drawing 
+  8. The teams will switch roles and repeat the process
 
 ## The Interface Drawing Game
 
 Make sure that one of your user story cards has a list of all team members on the back. Also, make sure that at least one page from your drawings has all team members names on the back.
 
-As a team, you should decide on an application that you would like to have and would be useful to Vanderbilt students, college students in general, or people living in Nashville. You must then write a specification for the application and deliver the specification as a set of user stories. Each user story must be something that would impact the end-user (e.g., no implementation style user stories). The user stories should be written on the notecards provided to you in class. You will have 5 minutes to create your user stories. 
+As a team, you should decide on an application that you would like to have and would be useful to Vanderbilt students, college students in general, or people living in Nashville. You must then write a specification for the application and deliver the specification as a set of user stories. Each user story must be something that would impact the end-user (e.g., no implementation style user stories). The user stories should be written on the sticky notes provided to you in class. You will have 5 minutes to create your user stories. 
 
 For each user story, you must create an "acceptance criteria" or method for evaluating if the user story is satisfied by an implementation of the specification. Your acceptance criteria should be "testable" by a person on another team. Your acceptance criteria should be written down on one copy of each user story.
 
