@@ -33,7 +33,9 @@ ways:
   4. One team will draw a picture based on the instructions while the other team watches
   5. Before the round begins, the drawing team has 2 minutes to ask any questions that they would like
   6. At the 2 minute mark, drawing will be paused and the drawing team has another 1 minute to ask any questions
-  7. The drawing team will have another 2 minutes to complete the drawing 
+  7. The drawing team will have another 2 minutes to draw
+  8. The drawing will then be paused again to answer another 2 minutes of questions
+  9. The drawing team will then complete the drawing
   8. The teams will switch roles and repeat the process
 
 ## The Interface Drawing Game
