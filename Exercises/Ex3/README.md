@@ -8,16 +8,6 @@ assignments will be in Java. This exercise will introduce you to the key tools t
 we will be using: Eclipse, Gradle, Git, the Eclipse Debugger, and JUnit. You should
 already be familiar with Eclipse basics from past courses.
 
-Most real-world software engineering is done in teams. A team must work together to 
-succeed. Team members must not only work hard themselves, but help other teammates
-out as needed.
-
-You have been assigned to a group for this in-class assignment. Each member of each group
-needs to complete the assignment. The group is responsible for ensuring that all 
-team members both complete the in-class assignment and understand
-the material. Each team should derive a process for making sure that everyone in the
-group both completes the assignment and understands the material. 
-
 ## Step 0 - Setup Your Assignment
 
 Since the last class, you should have setup a development environment with Eclipse,
@@ -28,7 +18,7 @@ Git.
 
 __Do This:__ When you are done, find the org.magnum.cs278.bootstrapex. Student 
 class in the src/main/java folder and update all three variables exactly as described 
-in the comments. In particular, you must enter your name exactly as it appears in YES.
+in the comments. 
 
 ## Step 1 - Running JUnit Tests
 
@@ -124,9 +114,9 @@ or "Code Generation Library" library and add it to your build.gradle file as a d
 
 Each time that you make a change to your build.gradle file in Eclipse, you need to
 "refresh" it so that Eclipse will be updated with the changes. To update your build.gradle
-file, right-click on the project root folder->Gradle->Refresh All. Gradle will run, download any new dependencies,
-and then reconfigure your Eclipse project. Go ahead and refresh your build.gradle file
-to pickup the changes that you made.
+file, right-click on the project root folder->Gradle->Refresh Gradle Project. Gradle 
+will run, download any new dependencies, and then reconfigure your Eclipse project. 
+Go ahead and refresh your build.gradle file to pickup the changes that you made.
 
 You now have completed a crash course in the basics of Gradle. You can find and add
 libraries to an existing Gradle file when you need to. You will be using Gradle throughout
