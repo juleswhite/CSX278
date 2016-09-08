@@ -10,9 +10,8 @@ Using the stack:
 
 - [The Complete Guide to the ELK Stack](http://logz.io/learn/complete-guide-elk-stack/)
 - [Logstash Tutorial: How to Get Started](http://logz.io/blog/logstash-tutorial/)
-- [Log Analysis Using the ELK Stack](https://dzone.com/articles/drupal-log-analysis-using-the-elk-stack)
 - [Using Kibana for the First Time](https://www.elastic.co/guide/en/kibana/3.0/using-kibana-for-the-first-time.html)
-- [Which ELK Stack Solution is Right for you](https://dzone.com/articles/which-elk-stack-solution-is-right-for-you)
+- [Elastic Search 101](http://joelabrahamsson.com/elasticsearch-101/)
 
 
 ### Acknowledgements
