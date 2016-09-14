@@ -85,23 +85,23 @@ https://www.youtube.com/watch?v=eRq6codSth4&list=PLyUlngzGzkztgTizxM6_zqiw8sRj7v
 
 ## Before 9/27 - CS Students
 
-JHipster Team Reading
+JHipster Team Reading -- See Asgn2
 
 ## Before 9/29 - CS Students
 
-Docker Team Reading
+Docker Team Reading -- See Asgn3
 
 ## Before 10/4 - CS Students
 
-ELK Team Reading
+ELK Team Reading -- See Asgn4
 
 ## Before 10/6 - CS Students
 
-Micro Services Team Reading
+Micro Services Team Reading -- See Asgn5
 
 ## Before 10/18 - CS Students
 
-React Team Reading
+React Team Reading -- See Asgn6
 
 ## Before 10/25 - CS Students
 

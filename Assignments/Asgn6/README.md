@@ -1,9 +1,17 @@
 ## React Reading (before 10/18)
 
 - [Getting Started with React.js](https://www.youtube.com/watch?v=68NzBI6RRKE)
-- [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
 - [Learning React.js: Getting Started and Concepts](https://scotch.io/tutorials/learning-react-getting-started-and-concepts)
+- [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+  - [Why React?](https://facebook.github.io/react/docs/why-react.html)
+  - Read from "Why React?" to "Transferring Props"
 - [A Cartoon Guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.xgg3sdvgr)
+- [How React Components Make UI Testing Easy](https://www.toptal.com/react/how-react-components-make-ui-testing-easy)
+
+### For reference, the following readings are optional
+- [Mozilla Developer Network: the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction/)
+- [Eloquent JavaScript](http://eloquentjavascript.net/)
+
 
 ### Acknowledgement
 
