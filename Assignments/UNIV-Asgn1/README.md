@@ -15,7 +15,9 @@ compelling solutions for their challenge problems.
 
 ## Proposal Requirements
 
-You must create proposals to bid on projects from three different mentors.
+You must create proposals to bid on projects from two different mentors. You
+are free to bid on more if you would like for bonus credit. Proposals will be
+used to aid in determining matches between students and projects.
 
 The format of the proposal is up to you, but it must be represented by one or
 more concrete artifacts (e.g., written proposal, slides, video). You are more
