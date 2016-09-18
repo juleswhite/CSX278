@@ -31,14 +31,14 @@ Inside the MS1 folder, generate a new JHipster application with the following op
 13. No testing (press space to unchoose gatling)
 
 This microservice will keep track of people. 
-- Create a new Person entity with the following properties:
- - Fields:
-  - name (string with “required” validation)
-  - age (Integer with validation minimum value of 18)
-  - address (string with no validation)
- - No DTO 
- - no separate class 
- - no pagination
+Create a new Person entity with the following properties:
+- Fields:
+ - name (string with “required” validation)
+ - age (Integer with validation minimum value of 18)
+ - address (string with no validation)
+- No DTO 
+- no separate class 
+- no pagination
 
 Build the microservice
 
@@ -58,24 +58,24 @@ Inside the MS2 folder, generate a new JHipster application with the same options
 12. No testing (press space to unchoose gatling)
 
 
-- Create a Blog entity with the following properties:
- - Fields
-  - name (String with “required” validation 
- - No Relationships with other entities
- - No Data Transfer Object
- - No separate service object (use the repo directly)
- - No pagination
-- Create a Entry entity with the following properties: 
- - Fields
-  - title (String with “required” validation)
-  - content (String)
-  - date (LocalDate with “required” validation)
- - Many to one relationship with the blog entity
-  - Use the name as an id
-  - No validation rules
- - No Data Transfer Object
- - No separate service object (use the repo directly)
- - No pagination
+Create a Blog entity with the following properties:
+- Fields
+ - name (String with “required” validation 
+- No Relationships with other entities
+- No Data Transfer Object
+- No separate service object (use the repo directly)
+- No pagination
+Create a Entry entity with the following properties: 
+- Fields
+ - title (String with “required” validation)
+ - content (String)
+ - date (LocalDate with “required” validation)
+- Many to one relationship with the blog entity
+ - Use the name as an id
+ - No validation rules
+- No Data Transfer Object
+- No separate service object (use the repo directly)
+- No pagination
 
 Inside the MyGateway folder, generate a new JHipster application with the following options:
 
