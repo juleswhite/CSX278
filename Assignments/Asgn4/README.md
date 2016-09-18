@@ -31,6 +31,7 @@ Inside the MS1 folder, generate a new JHipster application with the following op
 13. No testing (press space to unchoose gatling)
 
 This microservice will keep track of people. 
+
 Create a new Person entity with the following properties:
 - Fields:
  - name (string with “required” validation)
@@ -65,6 +66,7 @@ Create a Blog entity with the following properties:
 - No Data Transfer Object
 - No separate service object (use the repo directly)
 - No pagination
+
 Create a Entry entity with the following properties: 
 - Fields
  - title (String with “required” validation)
