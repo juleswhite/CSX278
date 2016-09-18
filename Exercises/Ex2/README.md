@@ -44,11 +44,13 @@ Make sure that your schedule and estimates are not on the same paper that your r
 
 The UNIV students in each group should take the group's requirements to another team and ask them to
 provide an estimate of how long each requirement will take. UNIV students should NOT discuss any of the
-prior estimates or schedules that were generated. As the estimates are being generated, the UNIV students 
+prior estimates or schedules that were generated. UNIV students CAN answer questions about how features
+are expected to work and what things mean. As the estimates are being generated, the UNIV students 
 should use a fresh sheet of paper to create a schedule for the project based on the new team's estimates.
 You have 5 minutes to discuss the requirements and generate the schedule.
 
-When you are done, the UNIV students should take the requirements to a new team and repeat the process.
+When you are done, the UNIV students should take the requirements to a new team and repeat the process
+until 5 total estimates have been created (the original estimate + 4 additional estimates from other teams).
 
 When you have finished creating the schedules with the other teams, return to your original team.
 
@@ -66,7 +68,7 @@ Using the schedules that were produced:
 8. Calculate how many days early your project was delivered
 9. Your score is the sum of #4 and #8
 
-The team with the lowest score wins. The team with the lowest score gets a 5pt bonus on the next quiz.
+The team with the lowest score wins. The team with the lowest score gets a 5pt bonus on the midterm.
 
 
   
