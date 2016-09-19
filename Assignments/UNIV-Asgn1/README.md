@@ -19,6 +19,21 @@ You must create proposals to bid on projects from two different mentors. You
 are free to bid on more if you would like for bonus credit. Proposals will be
 used to aid in determining matches between students and projects.
 
+Your two proposals must cover one project from each group of mentors:
+
+Group 1:
+- Ken Monahan - Cardiology
+- JB Ruhl - Legal Aid
+- Heidi Silver - Nutrition
+- Trent Rosenbloom - Pediatric Asthma
+
+Group 2:
+- Abhishek Dubey - Smart Cities
+- Shelagh Mulvaney - Adolescent Diabetes
+- Pamela Hull - HPV Vaccination
+- Steve Cornelius - Renewable Energy
+- Ole Molvig - Humanities
+
 The format of the proposal is up to you, but it must be represented by one or
 more concrete artifacts (e.g., written proposal, slides, video). You are more
 than welcome to reach out to the mentors to get additional information on the
