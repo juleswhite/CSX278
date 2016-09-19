@@ -28,7 +28,9 @@ In this assignment, you will develop a simple student contact list consisting of
 4. Install Gulp: `npm install -g gulp-cli` (If you have previously installed a version of gulp globally, please run `npm rm -g gulp` to make sure your old version doesn&#39;t collide with gulp-cli)
 5. Install JHipster: `npm install -g generator-jhipster`
 
-**Setting up your JHipster application**
+
+You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/)
+Once completed, type `yo jhipster` into the command line, and send a picture of the output to a member of our team. **Setting up your JHipster application**
 
 1. First of all, create an empty directory in which you will create your application: `mkdir myapplication`
 2. Go to that directory: `cd myapplication/`
