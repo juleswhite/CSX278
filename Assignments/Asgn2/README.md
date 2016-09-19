@@ -14,7 +14,7 @@ JHipster is a free open-source application generator used to quickly develop mod
 ### Acknowledgements
 + Most of our readings come directly from the JHipster documentation provided by the developers and creators of JHipster. Also, within the articles, are video guides created by the founder of JHipster, Julien Dubois. Aside from the video, most of the articles were written or updated in the last year, and though new versions have been released, the basics of JHipster have remained the same.
 
-###Assignment 2 Spec: 
+##Assignment 2 Spec: 
 
 *Due Date: 9/27*
 
