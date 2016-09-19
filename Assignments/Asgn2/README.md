@@ -29,8 +29,9 @@ In this assignment, you will develop a simple student contact list consisting of
 5. Install JHipster: `npm install -g generator-jhipster`
 
 
-You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/)
+You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/).
 Once completed, type `yo jhipster` into the command line, and email a picture of the output to a member of our team.
+
  **Setting up your JHipster application (to be completed in class)**
 
 1. First of all, create an empty directory in which you will create your application: `mkdir myapplication`
