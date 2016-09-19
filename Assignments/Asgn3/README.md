@@ -35,7 +35,12 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 + Thanks to Harrison Stall for Beta testing these readings!
 
 ## In-class assignment
-+ (Installation of Docker will be verified in class through makeing them pull an image that will poll them for their ID's and will be stored in a DB).
+### Pre-assignment
++ Quiz on the reading materials.
++ To verify you have downloaded everything before class .
+
+### Pack JHipster's team solution into a container
+### Docker compose with grading dependency 
 
 ## Team members
 + [Campbell, Grey](mailto:grey.e.campbell@vanderbilt.edu)
