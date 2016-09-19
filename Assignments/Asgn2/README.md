@@ -111,7 +111,7 @@ In order to create a contact list, you will need to create entities, which repre
 
 You should attempt to recreate the following entity heirarchy:
 
-![jhipster-jdl.png](https://s15.postimg.org/6ge8l3c8r/jhipster_jdl.png)
+![jhipster-jdl.png](https://s16.postimg.org/vlxlj0afp/jhipster_jdl.png)
 
 To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
