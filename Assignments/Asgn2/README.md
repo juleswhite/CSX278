@@ -100,8 +100,6 @@ Design a contact list application which stores the following information about a
 - Phone number
 - Graduation Date
 - Dormitory
-
-
 - School
 
 **Creating and Importing JDL file**
