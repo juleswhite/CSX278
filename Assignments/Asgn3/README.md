@@ -7,12 +7,15 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 + Make an account in [Docker Hub](https://hub.docker.com/)
 + We assume you have read the [Bash shell tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) from assignment 0 or that you are familiar with the basic Unix commands.
 + Install Docker:
-    - If you are working on Linux, Mac, or Windows Professional, dowload the appropriate installer from [here](https://www.docker.com/products/docker#/windows) and follow the instructions.
+    - If you are working on Linux, Mac, or Windows Professional
+    	+ Download the appropriate installer from [here](https://www.docker.com/products/docker#/windows) and follow the instructions.
+    	+ Install Docker Compose from [here](https://docs.docker.com/compose/install/)
     - If you have a Windows Home installation, make sure to download Docker from [here](https://www.docker.com/products/docker-toolbox) and make sure to choose the option to install VirtualBox as Docker needs virtualization in non-Linux systems. Everytime that you need to execute Docker commands in the command line make sure to run *docker-machine start* to boot up the virtual machine in which Docker runs in your system and then run the appropriate [environment configuration command](https://getcarina.com/docs/tutorials/load-docker-environment-on-windows/). To make sure that it's setup correctly run *docker run hello-world*. In case it doesn't display 
 
     	> Hello from Docker!
 
     	There's a [troubleshooting](https://docs.docker.com/toolbox/faqs/troubleshoot/) section in the Docker documentation to configure the virtual machine.
+
 + Optional: Java, Python, and PiP are required if you want to follow the long example on how to use Docker.
 
 ### Readings
@@ -37,7 +40,10 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 ## In-class assignment
 ### Pre-assignment
 + Quiz on the reading materials.
-+ To verify you have downloaded everything before class .
++ If you are using Docker-Toolset make sure you run `docker-machine start` and set the environment variables accordingly.
++ To verify you have downloaded everything before class, download and run our docker image by running `docker run hoyosjs\<insert_name_marker> --name <insert_name_marker>` and run `docker exec <name_of_script>`
++  fill [this form](https://docs.google.com/a/vanderbilt.edu/forms/d/e/1FAIpQLScZ7tOaBJjbu95gM8l1jv4OmnYgagh8jVmrwxa1dukQd19xRA/viewform?c=0&w=1) with the output of the command.
++ Stop the running image with `docker stop <inser_name_marker>`
 
 ### Pack JHipster's team solution into a container
 ### Docker compose with grading dependency 
