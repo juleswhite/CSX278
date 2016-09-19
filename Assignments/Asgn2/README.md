@@ -89,7 +89,7 @@ For this project, we will be using the following setup configuration:
 
 5. Ensure that all of your package managers loaded correctly: npm install &amp;&amp; bower install &amp;&amp; gulp install
 
-**Objective**
+**Objective (to be completed at home)**
 
 Design a contact list application which stores the following information about a student in each entry:
 
@@ -102,6 +102,7 @@ Design a contact list application which stores the following information about a
 
 
 - School
+
 **Creating and Importing JDL file**
 
 In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._
@@ -109,7 +110,7 @@ In order to create a contact list, you will need to create entities, which repre
 
 You should attempt to recreate the following entity heirarchy:
 
-[![jhipster-jdl.png](https://s15.postimg.org/6ge8l3c8r/jhipster_jdl.png)]
+![jhipster-jdl.png](https://s15.postimg.org/6ge8l3c8r/jhipster_jdl.png)
 
 To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
