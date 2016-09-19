@@ -30,7 +30,8 @@ In this assignment, you will develop a simple student contact list consisting of
 
 
 You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/)
-Once completed, type `yo jhipster` into the command line, and send a picture of the output to a member of our team. **Setting up your JHipster application**
+Once completed, type `yo jhipster` into the command line, and email a picture of the output to a member of our team.
+ **Setting up your JHipster application (to be completed in class)**
 
 1. First of all, create an empty directory in which you will create your application: `mkdir myapplication`
 2. Go to that directory: `cd myapplication/`
@@ -94,14 +95,21 @@ Design a contact list application which stores the following information about a
 
 - Email
 - Full Name
-- Preferred Name
+- Preferred Contact Method
 - Phone number
-- Graduation Year
+- Graduation Date
 - Dormitory
 
+
+- School
 **Creating and Importing JDL file**
 
-In order to create a contact list, you will need to create entities, which represent elements of the roster, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._
+In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._
+
+
+You should attempt to recreate the following entity heirarchy:
+
+[![jhipster-jdl.png](https://s15.postimg.org/6ge8l3c8r/jhipster_jdl.png)]
 
 To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
