@@ -62,6 +62,6 @@ In addition, your proposal must have the following elements:
 
 ## Due Dates
 
-Your three proposals are due by midnight on 10/2. Proposals should be emailed
+Your two proposals are due by midnight on 10/2. Proposals should be emailed
 to the TA and cc' the instructor. For large files greater than 25mb, please 
 email a link to Box, Drive, Dropbox, Youtube, or some other location. 
