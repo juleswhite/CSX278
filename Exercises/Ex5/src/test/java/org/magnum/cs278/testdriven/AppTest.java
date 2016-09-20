@@ -42,7 +42,6 @@ public class AppTest {
 			assertNotNull(event);
 			assertNotNull(event.getLocation());
 			assertNotNull(event.getName());
-			assertNotNull(event.getAttendance());
 			assertNotNull(event.getDate());
 		}
 	}
