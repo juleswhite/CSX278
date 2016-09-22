@@ -59,7 +59,8 @@ and annotating them with @RequestMapping.
 
 __Try This:__ Try adding a new method called "myTest"
 that takes no parameters and annotate it with a @RequestMapping so that it receives
-GET requests to the "/test/foo" path. 
+GET requests to the "/test/foo" path. You can have the method return a String like "Test"
+so that you get a result when accessing the "/test/foo" path.
 
 This example uses an Object Relational Mapping (ORM) framework called JPA to store
 data to a database. The project is setup to use an embedded in-memory database called
@@ -85,10 +86,10 @@ converting the JSON that we sent it into a Video object and passing it into our 
 method as a parameter. The @RequestBody annotation told Spring to take the body of the request,
 which was {"id":1} and convert it into a Video.
 
-__Try This:__ Open up the Video class and try adding some additional member variables to it.
-Then, use variations of the curl command above to create new videos. You can set the properties
-of the Video's member variables by changing the data in your request. For example, if you created
-a "name" member variable, you could set it with a curl request like this:
+__Try This:__ Open up the Video class and try adding some additional member variables with 
+associated getter/setter methods. Then, use variations of the curl command above to create new videos. 
+You can set the properties of the Video's member variables by changing the data in your request. 
+For example, if you created a "name" member variable, you could set it with a curl request like this:
 
     curl -XPOST http://localhost:8080/video -d '{"id":-1, "name":"Rocky"}' -H "Content-Type:application/json"
     
