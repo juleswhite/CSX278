@@ -12,6 +12,7 @@ Using the stack:
 - [Logstash Tutorial: How to Get Started](http://logz.io/blog/logstash-tutorial/)
 - [Using Kibana for the First Time](https://www.elastic.co/guide/en/kibana/3.0/using-kibana-for-the-first-time.html)
 - [Elastic Search 101](http://joelabrahamsson.com/elasticsearch-101/)
+- [Monitoring Your JHipster Application](https://jhipster.github.io/monitoring/)
 
 
 ### Acknowledgements
@@ -96,6 +97,10 @@ We will be using a dataset of James Bond movies throughout this portion of the a
 2. Point your browser to “localhost:5601”.  This should take you to the Kibana dashboard.
 3. Create a visualization that shows what percentage of bond movies have Sean Connery starring as James Bond.  Add that visualization to your dashboard.
 
+##### Turn in
+
+Add your code to Solutions/Asgn5 in your repository.
+
 #### Part 2 - Using the ELK Stack with Log Data
 
 ##### Goals
@@ -114,6 +119,25 @@ Now, open up the docker terminal and run `docker-machine ip`. This indicates the
 
 All appropriate changes have been made, so to view the console simply start the console by navigating to the directory with the docker-compose.yml file in your docker terminal and running `docker-compose up`. Then, start the microservice by running `./gradlew bootrun` from a different terminal in the same directory. You can find the console at your_ip:5601.
 
+###### Instructions
+
+Start your service and JHipster console.
+
+####### Adding Visualization To Dashboard
+
+Kibana comes with some pre-made visualizations that you can quickly add to your dashboard. Navigate to the "Dashboard" tab in the JHipster console and add the pre-made visualization "Log Count". Click on the name in the legend and change the color of the series. In Kibana, you can also create your own visualizations that are more specific to your project.
+
+####### Creating Custom Visualizations
+
+You will first create a visualization based on the automatically added performance metrics. Navigate to the JHipster console in a browser and select the "Visualize" tab. From here, create a new line chart using the logstash pattern that maps the number of "INFO" logs over time. The y-axis should be labeled "INFO Logs" and the x-axis should be "@timestamp per 30 seconds". Save this visualization as "INFO Logs Over Time" and then add it to your dashboard.
+
+Next, open up the microservice, login and navigate to the entities page. Create five new people with any field information you want. Next, create your own vertical bar chart visualization that maps how many objects are created over time. The x-axis should be a date histogram. Choose a small enough time interval so that there are multiple bars in the visualization. Save this as "New Objects" and add it to your Dashboard.
+
+Note: For this part, you will need to find a unique log that is called each time an object is created and then query for that. Make sure the visualization includes all 5 people you just created. The discover tab is useful for this.
+
+The last visualization you should create should map "DEBUG" logs. This should be a bar chart like the previous visualization with results aggregated by the minute. If errors occur in the application, a visualization like this (but with "ERROR") would be helpful in indicating what went wrong and when.
+
+To turn in this part of the assignment, create a folder in Solutions/Asgn5 in your repo and add screenshots of your overall dashboard and individual images of all 4 visualizations added.
 
 ### Team Members
 
