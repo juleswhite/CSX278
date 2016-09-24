@@ -128,6 +128,7 @@ To import the JDL file in your project, run command: `yo jhipster:import-jdl <fi
 2. Access your application at `http://localhost:8080`
 
 **Submission and Follow-Up**
+
 To submit your assignment, simply upload your jdl file to your Asgn2 github.
 
 Now that you have a working application, explore it! Feel free to explore however you'd like, but here are some suggestions:
