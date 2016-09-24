@@ -25,7 +25,7 @@ In this assignment, you will develop a simple student contact list consisting of
 *Note: Please make sure you have the latest versions of all software, or you will have many issues*
 
 1. Install Node.js from [the Node.js website](http://nodejs.org/) (prefer an LTS version). This will also install npm, which is the node package manager we are using in the next commands.
-2. Install Git from [the git site](https://git-scm.com/)
+2. Install Git from [the git site](https://git-scm.com/).
 3. Install Yeoman: `npm install -g yo`
 4. Install Bower: `npm install -g bower`
 5. Install Gulp: `npm install -g gulp-cli` (If you have previously installed a version of gulp globally, please run `npm rm -g gulp` to make sure your old version doesn&#39;t collide with gulp-cli)
@@ -116,7 +116,7 @@ In order to create a contact list, you will need to create entities, which repre
 
 You should attempt to recreate the following entity heirarchy:
 
-![jhipster-jdl.png](http://postimg.org/image/mi7ohbg97/)
+![jhipster-jdl.png](http://s9.postimg.org/v0h4lnmrz/pic.png)
 
 *Note: Some of the labels on the diagram have been removed to make this part a bit more difficult.*
 
