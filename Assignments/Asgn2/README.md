@@ -111,7 +111,7 @@ Design a contact list application which stores the following information about a
 
 **Creating and Importing JDL file**
 
-In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._
+In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._Keep in mind that when adding entities, you will want to be able to pick, for example, which school a student is in, not the ID of that school.
 
 
 You should attempt to recreate the following entity heirarchy:
