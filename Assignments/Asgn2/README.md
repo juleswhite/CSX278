@@ -117,8 +117,7 @@ You should attempt to recreate the following entity heirarchy:
 
 ![jhipster-jdl.png](http://s9.postimg.org/v0h4lnmrz/pic.png)
 
-*Note: Some of the labels on the diagram have been removed to make this part a bit more difficult.*
-*Note: Please name your entities EXACTLY how they are named in the provided diagram. This helps a lot for grading.*
+*Note: Some of the labels on the diagram have been removed to make this part a bit more difficult. Please name your entities EXACTLY how they are named in the provided diagram. This helps a lot for grading.*
 
 Now download your file, and rename it `First_Last_JDL.jh`. Move the file into the same folder as your project. To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
@@ -126,6 +125,8 @@ Now download your file, and rename it `First_Last_JDL.jh`. Move the file into th
 
 1. Windows users: run `gradlew` | Mac users: run `./gradlew`
 2. Access your application at `http://localhost:8080`
+
+*Note: If you already have a process running on port 8080, you will need to terminate that process before running your project.*
 
 **Submission and Follow-Up**
 
