@@ -113,14 +113,14 @@ Design a contact list application which stores the following information about a
 
 In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/). Keep in mind that when adding entities, you will want to be able to pick, for example, which school a student is in, not the ID of that school.
 
-
 You should attempt to recreate the following entity heirarchy:
 
 ![jhipster-jdl.png](http://s9.postimg.org/v0h4lnmrz/pic.png)
 
 *Note: Some of the labels on the diagram have been removed to make this part a bit more difficult.*
+*Note: Please name your entities EXACTLY how they are named in the provided diagram. This helps a lot for grading.*
 
-To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
+Now download your file, and rename it `First_Last_JDL.jh`. Move the file into the same folder as your project. To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
 **Building and running your JHipster application**
 
@@ -129,7 +129,7 @@ To import the JDL file in your project, run command: `yo jhipster:import-jdl <fi
 
 **Submission and Follow-Up**
 
-To submit your assignment, simply upload your jdl file to your Asgn2 github.
+To submit your assignment, simply upload your jdl file to your Asgn2 github. Please name your JDL file `First_Last_JDL.jh`
 
 Now that you have a working application, explore it! Feel free to explore however you'd like, but here are some suggestions:
 
