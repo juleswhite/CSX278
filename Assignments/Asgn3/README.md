@@ -57,15 +57,17 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 + Push your image to the hub using `docker login` and `docker push`.
 
 ### Getting the grading dependency configured
++ Create a file called `vunet` and write your vunetid. Double check the spelling.
 + Create a new docker file.
-+ Base it off `hoyosjs\<base_grading>`
-+ Add an environment variable called `VUNETID`
-+ Build the image and call it `grading`.
++ Base it off `hoyosjs/`
++ Change the `WORKDIR` to `/app/data/`
++ Add the vunet file to the container by adding the `ADD ./vunet .` to the Dockerfile
++ Build the image and call it `grading_helper`.
 
 ### Docker compose with grading dependency 
 + Create a file `docker-compose.yml`
 + Add a service called jhipster that depends on your image and forward ports as necessary.
-+ Add a service called grading that depends on the image grading that you built. 
++ Add a service called grading that depends on the grading image you built. 
 	Each service gets its own top level ‘object’ written as ‘service1’ or ‘service2’
 	Beneath each you need to specify the image name, the ports each uses, or the dockerfile used to build it.
 
@@ -79,7 +81,7 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 	  volumes:
 	    - .:/usr/src/app
 
-	grading:
+	grading_helper:
 	  image: hello-world 
 	  ports:
 	    - "8080:8080"
@@ -88,7 +90,10 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 	 ```
 
 + Run `docker-compose up` and wait.
-+ If you performed all steps correctly you should get a token which you should [send here](mailto:juan.s.hoyos@vanderbilt.edu).
++ If you performed all steps correctly you should get a token which you should [send here](https://goo.gl/forms/Rq0kb2PowbwHEMr23).
+
+### Final step
++ Please add the Dockerfiles for both the images you generated to your Github repo under `Assignment/Asgn3` and push the changes to your `dev` branch
 
 ### Acknowledgements
 + The first reading is directly from the Docker documentations as a general overview of how to work with and how Docker works.
