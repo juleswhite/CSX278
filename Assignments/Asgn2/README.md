@@ -22,15 +22,18 @@ In this assignment, you will develop a simple student contact list consisting of
 
 **Installing JHipster and other prerequisite software (to be done before class)**
 
+*Note: Please make sure you have the latest versions of all software, or you will have many issues*
+
 1. Install Node.js from [the Node.js website](http://nodejs.org/) (prefer an LTS version). This will also install npm, which is the node package manager we are using in the next commands.
-2. Install Yeoman: `npm install -g yo`
-3. Install Bower: `npm install -g bower`
-4. Install Gulp: `npm install -g gulp-cli` (If you have previously installed a version of gulp globally, please run `npm rm -g gulp` to make sure your old version doesn&#39;t collide with gulp-cli)
-5. Install JHipster: `npm install -g generator-jhipster`
+2. Install Git from [the git site](https://git-scm.com/).
+3. Install Yeoman: `npm install -g yo`
+4. Install Bower: `npm install -g bower`
+5. Install Gulp: `npm install -g gulp-cli` (If you have previously installed a version of gulp globally, please run `npm rm -g gulp` to make sure your old version doesn&#39;t collide with gulp-cli)
+6. Install JHipster: `npm install -g generator-jhipster`
 
 
 You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/).
-Once completed, type `yo jhipster` into the command line, and email a picture of the output to a member of our team.
+Once completed, type `yo jhipster` into the command line, upload a picture of the output to any image-hosting website, and submit it via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSfGNnvSN1LOC54gLVoSsFfHPv6KHVt-dVgX_Elnq7dWBEMMpw/viewform)
 
  **Setting up your JHipster application (to be completed in class)**
 
@@ -90,6 +93,10 @@ For this project, we will be using the following setup configuration:
 
 5. Ensure that all of your package managers loaded correctly: npm install &amp;&amp; bower install &amp;&amp; gulp install
 
+At this point, if everything has been done correctly, you should be able to launch your application. Make sure that you don't have a processes running on the 8080 port. Launch your app by typing:
+Windows users: run `gradlew` | Mac users: run `./gradlew`
+Now navigate your browser to `http://localhost:8080`. Play around with the application for a while. Login as different types of users and see what you can find.
+
 **Objective (to be completed at home)**
 
 Design a contact list application which stores the following information about a student in each entry:
@@ -104,21 +111,31 @@ Design a contact list application which stores the following information about a
 
 **Creating and Importing JDL file**
 
-In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/)_._
-
+In order to create a contact list, you will need to create entities, which represent elements of the contact, and indicate the relationships between them using JDL studio, found at [_https://jhipster.github.io/jdl-studio/_](https://jhipster.github.io/jdl-studio/). Keep in mind that when adding entities, you will want to be able to pick, for example, which school a student is in, not the ID of that school.
 
 You should attempt to recreate the following entity heirarchy:
 
-![jhipster-jdl.png](https://s16.postimg.org/vlxlj0afp/jhipster_jdl.png)
+![jhipster-jdl.png](http://s9.postimg.org/v0h4lnmrz/pic.png)
 
-To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
+*Note: Some of the labels on the diagram have been removed to make this part a bit more difficult. Please name your entities EXACTLY how they are named in the provided diagram. This helps a lot for grading.*
+
+Now download your file, and rename it `First_Last_JDL.jh`. Move the file into the same folder as your project. To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
 **Building and running your JHipster application**
 
 1. Windows users: run `gradlew` | Mac users: run `./gradlew`
 2. Access your application at `http://localhost:8080`
 
+*Note: If you already have a process running on port 8080, you will need to terminate that process before running your project.*
 
+**Submission and Follow-Up**
+
+To submit your assignment, simply upload your jdl file to your Asgn2 github. Please name your JDL file `First_Last_JDL.jh`
+
+Now that you have a working application, explore it! Feel free to explore however you'd like, but here are some suggestions:
+
+Login as either type of user and add some entities of each kind. Why do you have to do it in a certain order?
+Look for the API page and navigate to some of the links in the drop-down menus. Do this both before and after you have added entities. What are the differences?
 
 
 
