@@ -129,5 +129,11 @@ DELETE /video/{id}
 For each element of the API, you should implement at least one
 corresponding test in the ExerciseApplicationTests class. 
 
+# If you finish that, do this
+
+Implement an API for commenting on and liking existing videos. Your API should allow users
+to retrieve the comments on a video and the total number of likes. You should prevent users from
+liking or commenting on non-existant videos.
+
 
 
