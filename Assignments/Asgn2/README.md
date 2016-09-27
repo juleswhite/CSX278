@@ -33,7 +33,8 @@ In this assignment, you will develop a simple student contact list consisting of
 
 
 You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/).
-Once completed, type `yo jhipster` into the command line, upload a picture of the output to any image-hosting website, and submit it via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSfGNnvSN1LOC54gLVoSsFfHPv6KHVt-dVgX_Elnq7dWBEMMpw/viewform)
+Once completed, run `yo jhipster` from the command line, upload a screenshot of the output to any image-hosting website, and submit it via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSfGNnvSN1LOC54gLVoSsFfHPv6KHVt-dVgX_Elnq7dWBEMMpw/viewform)
+**before class**.
 
  **Setting up your JHipster application (to be completed in class)**
 
@@ -43,7 +44,7 @@ Once completed, type `yo jhipster` into the command line, upload a picture of th
 4. Answer the questions asked by the generator to create an application tailored to your needs.
 For this project, we will be using the following setup configuration:
 ```
-(1/13) Which \*type\* of application would you like to create?
+(1/13) Which *type* of application would you like to create?
 Monolithic application (recommended for simple projects)
 
 (2/13) What is the base name of your application?
@@ -52,16 +53,16 @@ Monolithic application (recommended for simple projects)
 (3/13) What is your default Java package name?
 org.jhipster.com
 
-(4/13) Which \*type\* of authentication would you like to use?
+(4/13) Which *type* of authentication would you like to use?
 HTTP Session Authentication stateful, default Spring Security mechanism)
 
-(5/13) Which \*type\* of database would you like to use?
+(5/13) Which *type* of database would you like to use?
 SQL (H2, MySQL, MariaDB, PostgreSQL, Oracle)
 
-(6/13) Which \*production\* database would you like to use?
+(6/13) Which *production* database would you like to use?
 MySQL
 
-(7/13) Which \*development\* database would you like to use?
+(7/13) Which *development* database would you like to use?
 H2 with disk-based persistence
 
 (8/13) Do you want to use Hibernate 2nd level cache?
@@ -85,8 +86,10 @@ NONE (deselect the default)
 
 5. Ensure that all of your package managers loaded correctly: `npm install && bower install && gulp install`
 
-At this point, if everything has been done correctly, you should be able to launch your application. Make sure that you don't have a processes running on the 8080 port. Launch your app by typing:
-Windows users: run `gradlew` | Mac users: run `./gradlew`
+At this point, if everything has been done correctly, you should be able to launch your application. Make sure that you don't have a processes running on the 8080 port.
+Launch your app by typing:
+>Windows users: run `gradlew` | Mac users: run `./gradlew`
+
 Now navigate your browser to `http://localhost:8080`. Play around with the application for a while. Login as different types of users and see what you can find.
 
 **Objective (to be completed at home)**
@@ -112,6 +115,8 @@ You should attempt to recreate the following entity heirarchy:
 *Note: Some of the labels on the diagram have been removed to make this part a bit more difficult. Please name your entities EXACTLY how they are named in the provided diagram. This helps a lot for grading.*
 
 Now download your file, and rename it `First_Last_JDL.jh`. Move the file into the same folder as your project. To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
+
+> If jhipster asks if you would like to overwrite any files during this process, answer yes.
 
 **Building and running your JHipster application**
 
