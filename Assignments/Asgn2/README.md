@@ -114,6 +114,8 @@ You should attempt to recreate the following entity heirarchy:
 
 *Note: Some of the labels on the diagram have been removed to make this part a bit more difficult. Please name your entities* **EXACTLY** *how they are named in the provided diagram and put each relationship in a* **seperate declaration**. *This is essential a lot for grading.*
 
+> **CLARIFICATION**: "PreferredContact" is intended to mean Preferred Method of Contact, for example phone or email. It is not intended to be another student or person in general. Please keep the entity name as "PreferredContact" for grading purposes.
+
 Now download your file, and rename it `First_Last_JDL.jh`. Move the file into the same folder as your project. To import the JDL file in your project, run command: `yo jhipster:import-jdl <filename>` and then rebuild to incorporate changes.
 
 > If jhipster asks if you would like to overwrite any files during this process, answer yes.
