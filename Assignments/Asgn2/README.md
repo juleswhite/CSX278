@@ -42,56 +42,48 @@ Once completed, type `yo jhipster` into the command line, upload a picture of th
 3. To generate your application, type: `yo jhipster`
 4. Answer the questions asked by the generator to create an application tailored to your needs.
 For this project, we will be using the following setup configuration:
+```
+(1/13) Which \*type\* of application would you like to create?
+Monolithic application (recommended for simple projects)
 
-(1/16) Which \*type\* of application would you like to create?
-`Monolithic application (recommended for simple projects)`
+(2/13) What is the base name of your application?
+<name>
 
-(2/16) What is the base name of your application?
-`<name>`
+(3/13) What is your default Java package name?
+org.jhipster.com
 
-(3/16) What is your default Java package name?
-`org.jhipster.com`
+(4/13) Which \*type\* of authentication would you like to use?
+HTTP Session Authentication stateful, default Spring Security mechanism)
 
-(4/16) Which \*type\* of authentication would you like to use?
-`HTTP Session Authentication stateful, default Spring Security mechanism)`
+(5/13) Which \*type\* of database would you like to use?
+SQL (H2, MySQL, MariaDB, PostgreSQL, Oracle)
 
-(5/16) Do you want to use social login (Google, Facebook, Twitter)? Warning, this doesn&#39;t work with Cassandra!
-`No`
+(6/13) Which \*production\* database would you like to use?
+MySQL
 
-(6/16) Which \*type\* of database would you like to use?
-`SQL (H2, MySQL, MariaDB, PostgreSQL, Oracle)`
+(7/13) Which \*development\* database would you like to use?
+H2 with disk-based persistence
 
-(7/16) Which \*production\* database would you like to use?
-`MySQL`
+(8/13) Do you want to use Hibernate 2nd level cache?
+Yes, with ehcache (local cache, for a single node)
 
-(8/16) Which \*development\* database would you like to use?
-`H2 with disk-based persistence`
+(9/13) Would you like to use Maven or Gradle for building the backend?
+Gradle
 
-(9/16) Do you want to use Hibernate 2nd level cache?
-`Yes, with ehcache (local cache, for a single node)`
+(10/13) Which other technologies would you like to use?
+NONE
 
-(10/16) Do you want to use a search engine in your application?
-`No`
+(11/13) Would you like to use the LibSass stylesheet preprocessor for your CSS
+No
 
-(11/16) Do you want to use clustered HTTP sessions?
-`No`
+(12/13) Would you like to enable internationalization support?
+No
 
-(12/16) Do you want to use WebSockets?
-`No`
+(13/13) Which testing frameworks would you like to use?
+NONE (deselect the default)
+```
 
-(13/16) Would you like to use Maven or Gradle for building the backend?
-`Gradle`
-
-(14/16) Would you like to use the LibSass stylesheet preprocessor for your CSS
-`No`
-
-(15/16) Would you like to enable internationalization support?
-`No`
-
-(16/16) Which testing frameworks would you like to use?
-`NONE (deselect the default)`
-
-5. Ensure that all of your package managers loaded correctly: npm install &amp;&amp; bower install &amp;&amp; gulp install
+5. Ensure that all of your package managers loaded correctly: `npm install && bower install && gulp install`
 
 At this point, if everything has been done correctly, you should be able to launch your application. Make sure that you don't have a processes running on the 8080 port. Launch your app by typing:
 Windows users: run `gradlew` | Mac users: run `./gradlew`
