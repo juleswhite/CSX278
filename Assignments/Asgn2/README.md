@@ -33,7 +33,8 @@ In this assignment, you will develop a simple student contact list consisting of
 
 
 You may also choose to follow the guide linked [here](http://www.uvionicstech.com/blog/development/jhipster-installation-and-build-guide/).
-Once completed, type `yo jhipster` into the command line, upload a screenshot of the output to any image-hosting website, and submit it via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSfGNnvSN1LOC54gLVoSsFfHPv6KHVt-dVgX_Elnq7dWBEMMpw/viewform)
+Once completed, run `yo jhipster` from the command line, upload a screenshot of the output to any image-hosting website, and submit it via [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSfGNnvSN1LOC54gLVoSsFfHPv6KHVt-dVgX_Elnq7dWBEMMpw/viewform)
+before class.
 
  **Setting up your JHipster application (to be completed in class)**
 
