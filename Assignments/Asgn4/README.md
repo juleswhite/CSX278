@@ -7,28 +7,42 @@
 - [A simple video tutorial on creating microservice apps](https://www.linkedin.com/pulse/jhipster-quick-demo-how-create-microservices-gateways-victor-gil)
 - [A straight-forward guide on creating a microservice project with JHipster](https://docs.google.com/document/d/1Wxo43oJgp4XP-C72pIbT-cjV0S4OlAHHAxxt7bgXFHw/edit#heading=h.3bpe7usu47rb)
 
+## Software Install Instructions
+JHipster and Docker should be installed from the previous 2 assignments. 
+There is no additional software to install.
 
-## Assignment Specification 
+## Assignment Specification
+
+For this assignment we will create a simple web app that provides a simple blog functionality. 
+
+It will have two microservices: one managing person data, and the other managing blog data. 
+It will also have a gateway for users to interact with. 
+
+### Assignment Steps: 
 
 Create a new folder called MyMicroservices
 Create a subfolder called docker-compose
 Create a subfolder called MS1
 Create a subfolder called MS2 
 Create a subfolder called MyGateway
-Inside the MS1 folder, generate a new JHipster application with the following options
 
-1. Microservice application
-2. Default name (press enter)
-3. Port 8081
-4. Default package
-5. Default authentication
-6. SQL Database
-7. MySQL Production Database
-8. Default for Second-level cache
-9. Elasticsearch
-10. Gradle backend
-12. No internationalization
-13. No testing (press space to unchoose gatling)
+
+#### Person Microservice
+Inside the MS1 folder, generate a new JHipster application with the following options:
+
+- Microservice application
+- Default name (press enter)
+- Port 8081
+- Default package
+- Default authentication
+- SQL Database
+- MySQL Production Database
+- H-2 Disk based persistence
+- Use HazelCast for 2nd level cache hibernation 
+- Gradle backend
+- Elasticsearch
+- No internationalization
+- gatling testing
 
 This microservice will keep track of people. 
 
@@ -41,25 +55,28 @@ Create a new Person entity with the following properties:
 - no separate class 
 - no pagination
 
-Build the microservice
+Now build the microservice using the command 
+gradlew -Pprod buildDocker
 
+#### Blog Microservice
 Inside the MS2 folder, generate a new JHipster application with the same options as the first microservice, but make sure that a unique port is being used (8082, for example). This microapp will store blog posts.
 
-1. Microservice application
-2. Default name (press enter)
-3. Port 8081
-4. Default package
-5. Default authentication
-6. SQL Database
-7. MySQL Production Database
-8. Default for Second-level cache
-9. Elasticsearch
-10. Gradle backend
-11. No internationalization
-12. No testing (press space to unchoose gatling)
+- Microservice application
+- Default name (press enter)
+- Port 8082
+- Default package
+- Default authentication
+- SQL Database
+- MySQL Production Database
+- H-2 Disk based persistence
+- Use HazelCast for 2nd level cache hibernation 
+- Gradle backend
+- Elasticsearch
+- No internationalization
+- gatling testing
 
-
-Create a Blog entity with the following properties:
+ 
+Create a new entity named "Blog: with the following properties:
 - Fields
  - name (String with “required” validation 
 - No Relationships with other entities
@@ -67,18 +84,21 @@ Create a Blog entity with the following properties:
 - No separate service object (use the repo directly)
 - No pagination
 
-Create a Entry entity with the following properties: 
+Create a new entity named "Entry" with the following properties: 
 - Fields
  - title (String with “required” validation)
  - content (String)
  - date (LocalDate with “required” validation)
-- Many to one relationship with the blog entity
- - Use the name as an id
+- Many to one relationship with the Blog entity
+ - Use the "name" field from the Blog entity when displaying in AnglearJS
  - No validation rules
 - No Data Transfer Object
 - No separate service object (use the repo directly)
 - No pagination
 
+Now build the microservice application
+
+#### Gateway
 Inside the MyGateway folder, generate a new JHipster application with the following options:
 
 - Microservice gateway
@@ -89,17 +109,25 @@ Inside the MyGateway folder, generate a new JHipster application with the follow
 - SQL database
 - MySQL implementation
 - H2 development database with disk-based persistence
-- Default 2nd level cache
+- HazelCast 2nd level cache hibernation
 - Gradle backend
 - ElasticSearch
 - No LibSass preprocessing
 - No internationalization support
-- No testing framework
+- Gatling testing framework
 
-This gateway will be the front end of the application. It will need to reference the entities stored in the microservices. Import the entities you created earlier in the two microservice applications. Now build the gateway.
+This gateway will be the front end of the application. It will need to reference the entities stored in the microservices. 
+Import the entities you created earlier in the two microservice applications (This is explained in the readings). 
 
-Now go back to the docker-compose folder and run the Docker compose subgenerator. Use the default directory and add both microservices and the gateway. Run “docker-compose up -d” and you should be done. Check the port you used for the gateway and the app should be running.
+Now build the gateway 
 
+#### Docker Compose
+Now go back to the docker-compose folder and run the Docker compose subgenerator. Use the default directory and add both microservices and the gateway. Don't use the JHipster console 
+Run “docker-compose up -d” and you should be done. Check the port you used for the gateway and the app should be running.
+
+
+#### Submission 
+Look for a file named "docker-compose.yml" in your docker-compose directory. Add this file to your class github repo under the Asgn4 directory.
 
 
 ### Acknowledgement
