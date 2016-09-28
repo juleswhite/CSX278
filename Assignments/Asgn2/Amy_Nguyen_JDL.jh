@@ -1,0 +1,35 @@
+entity PreferredContact {
+	nameOfChoice String required
+}
+
+entity School {
+	schoolName String required
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Dormitory {
+	dormName String required
+}
+
+entity Student {
+	/**
+	* The firstname attribute.
+	*/
+	fullName String required,
+	emailAddress String required,
+	phoneNumber String required,
+	graduationDate LocalDate
+}
+
+relationship ManyToMany {
+	PreferredContact{student} to Student{preferredcontact}
+}
+
+relationship OneToMany {
+	School{student} to Student{school}
+}
+
+relationship OneToMany {
+	Dormitory{student} to Student{dormitory}
+}
