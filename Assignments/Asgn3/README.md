@@ -75,7 +75,7 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 
 	 Example:
 	 ```yaml
-	version: '2'
+	versions: '2'
 	service:
 		jhipster:
 		  build: .
@@ -97,7 +97,7 @@ Docker is a way to wrap a solution with all it's dependencies in a container as 
 		  	- jhipster
 	 ```
 + Run `docker-compose up`
-+ Run `docker run -it --rm grading-helper` on another terminal and follow the instructions.
++ Run `docker run -it --rm grading_helper` on another terminal and follow the instructions.
 + If you performed all steps correctly you should get a token which you should [send here](https://goo.gl/forms/Rq0kb2PowbwHEMr23).
 
 ### Final step
