@@ -30,6 +30,7 @@ The other articles selected were written by people with extensive experience usi
 ##### Goals
 1. To setup Logstash, Elasticsearch, and Kibana on your machine
 2. To run each application to make sure it is operating
+3. To install node.js on your machine and make sure it is operating
 
 ##### Installing ElasticSearch
 1. Download the ElasticSearch Zip from https://www.elastic.co/downloads/elasticsearch
@@ -61,6 +62,15 @@ Note: for the purposes of this assignment, Logstash does not need to be installe
 3. Navigate to the directory containing the extracted logstash files
 4. Run `bin/logstash.bat agent -f logstash.conf` on Windows or `bin/logstash agent -f logstash.conf` (Where logstash.conf is the .conf created earlier)
 
+##### Installing node.js
+
+1. Go to https://nodejs.org/en/download/ and download the installer of node required for your machine
+2. Open the installer and follow the instructions to complete installation
+ 
+##### Check node.js
+
+Before class open your terminal and enter the command “node -v”.  This should return a version number.  Include a screenshot of this in your email to Ashley.
+
 #### Part 1 (In class) - Intro to Elasticsearch and Kibana
 
 ##### Goals:
@@ -73,14 +83,18 @@ Note: for the purposes of this assignment, Logstash does not need to be installe
 
 ##### Setup:
 
-The first thing we need to do is start up our instance of Elasticsearch.  Use the terminal to navigate to the bin folder within the Elasticsearch folder you downloaded.  Once you are in this folder, run the `elasticsearch` executable (or the `elasticsearch.bat` executable if you are on Windows).  You should see it begin setup.  After it finishes, you can communicate with your Elasticsearch instance through a REST-based API on localhost port 9200.
+In this section we will be using the Javascript API provided by Elasticsearch.  The queries you write using methods from this API will be converted into RESTful requests that are sent to the elastic search instance running on your localhost port 9200.  The responses will be automatically output to your console so that you can check that your queries are functioning correctly.
 
-We will be using a dataset of James Bond movies throughout this portion of the assignment.  The first step is to place all of the movies into an index.  A table of the movies can be found in the “Box Office and Budget” table here: https://en.wikipedia.org/wiki/List_of_James_Bond_films.
+The first thing we need to do so that you can run the provided client.js file is to install the elasticsearch javascript package using node package manager.  This can be done by navigating to the folder that contains client.js in your terminal and entering the command “npm install elasticsearch”.  You may now run client.js with the command “node client.js”.  For anything to occur your instance of elasticsearch must be up and running when you execute client.js.
+
+Therefore, the next thing we need to do is start up our instance of Elasticsearch.  Use the terminal to navigate to the bin folder within the Elasticsearch folder you downloaded.  Once you are in this folder, run the `elasticsearch` executable (or the `elasticsearch.bat` executable if you are on Windows).  You should see it begin setup.  After it finishes, you can communicate with your Elasticsearch instance through a REST-based API on localhost port 9200.
+
+We will be using a dataset of James Bond movies throughout this portion of the assignment.  A table of the movies can be found in the “Box Office and Budget” table here: https://en.wikipedia.org/wiki/List_of_James_Bond_films.  The movie JSONs have been created for you.
 
 ##### Step 1: Creating, Populating, and Deleting an Elasticsearch Index
 
-1. Create an index called “bond_movies”
-2. Populate the index with all of the bond movies found in the table (Hint: use “put” commands).  Include the following information for each: title, year produced, bond actor, director.
+1. Create an index called “movies”
+2. Populate the index with the first bond movie (Dr. No) with the type “bond_movie” and an id of 1.  (Hint: an index is automatically created if the index specified when you create a document does not yet exist)
 3. Create a new index called “test” and populate it with one document of your choosing.  Then delete this new document from the index.
 
 ##### Step 2: Writing Elasticsearch Queries
@@ -137,7 +151,7 @@ Note: For this part, you will need to find a unique log that is called each time
 
 The last visualization you should create should map "DEBUG" logs. This should be a bar chart like the previous visualization with results aggregated by the minute. If errors occur in the application, a visualization like this (but with "ERROR") would be helpful in indicating what went wrong and when.
 
-To turn in this part of the assignment, create a folder in Solutions/Asgn5 in your repo and add screenshots of your overall dashboard and individual images of all 4 visualizations added.
+To turn in this part of the assignment, create a folder in Solutions/Asgn5 in your repo and add screenshots of your overall dashboard and individual images of all 4 visualizations added.  Then push to Github.
 
 ### Team Members
 
