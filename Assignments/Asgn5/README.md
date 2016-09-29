@@ -153,7 +153,7 @@ Next, open up the microservice, login and navigate to the entities page. Create 
 
 Note: For this part, you will need to find a unique log that is called each time an object is created and then query for that. Make sure the visualization includes all 5 people you just created. The discover tab is useful for finding the log.
 
-THe last visualization you should create is one of your choosing. Use a new query and design the visualization however you like. Add this new visualization to your dashboard. Click the arrow at the bottom chart on the dashboard and select the "Request" option. Copy the json object into a file called **"myrequest.json"**. Next, select the "Response" option and copy the json object into a file called **"myresponse.json"**.
+The last visualization you should create is one of your choosing. Use a new query and design the visualization however you like. Add this new visualization to your dashboard. Click the arrow at the bottom chart on the dashboard and select the "Request" option. Copy the json object into a file called **"myrequest.json"**. Next, select the "Response" option and copy the json object into a file called **"myresponse.json"**.
 
 To turn in this part of the assignment, create the folder Solutions/Asgn5 in your repo and add the 8 json files and a screenshot of your dashboard.
 
