@@ -46,25 +46,69 @@ spectre = {title: "Spectre", year: 2015, bond: "Daniel Craig", director: "Sam Me
 //setTimeout(queryKill, 6000);
 //setTimeout(query1967, 7000);
 //setTimeout(queryCasino1967, 8000);
-//setTimeout(changeMapping, 9000);
-//setTimeout(addBondMovies, 10000);
-//setTimeout(queryGuyHamilton_2, 13000);
-
 
 
 //Populating "movies" index w/ all of the bond movie JSONs
 //Using create() for first and bulk() to combine all other operations into a single request
 function addMovie1(){
-    client.create({
-        index: "movies",
-        type: "bond_movie",
-        id: "1",
-        body: dr_no
-    });
+ 
 }
 
 function addBondMovies(){
-
+client.bulk({
+        body: [
+            {index: {_index: "movies", _type: "bond_movie", _id: "2" }},
+            from_russia_with_love,
+            {index: {_index: "movies", _type: "bond_movie", _id: "3" }},
+            goldfinger,
+            {index: {_index: "movies", _type: "bond_movie", _id: "4" }},
+            thunderball,
+            {index: {_index: "movies", _type: "bond_movie", _id: "5" }},
+            casino_royale,
+            {index: {_index: "movies", _type: "bond_movie", _id: "6" }},
+            you_only_live_twice,
+            {index: {_index: "movies", _type: "bond_movie", _id: "7" }},
+            on_her_majestys_secret_service,
+            {index: {_index: "movies", _type: "bond_movie", _id: "8" }},
+            diamonds_are_forever,
+            {index: {_index: "movies", _type: "bond_movie", _id: "9" }},
+            live_and_let_die,
+            {index: {_index: "movies", _type: "bond_movie", _id: "10" }},
+            the_man_with_the_golden_gun,
+            {index: {_index: "movies", _type: "bond_movie", _id: "11" }},
+            the_spy_who_loved_me,
+            {index: {_index: "movies", _type: "bond_movie", _id: "12" }},
+            moonraker,
+            {index: {_index: "movies", _type: "bond_movie", _id: "13" }},
+            for_your_eyes_only,
+            {index: {_index: "movies", _type: "bond_movie", _id: "14" }},
+            octopussy,
+            {index: {_index: "movies", _type: "bond_movie", _id: "15" }},
+            never_say_never_again,
+            {index: {_index: "movies", _type: "bond_movie", _id: "16" }},
+            a_view_to_a_kill,
+            {index: {_index: "movies", _type: "bond_movie", _id: "17" }},
+            the_living_daylights,
+            {index: {_index: "movies", _type: "bond_movie", _id: "18" }},
+            licence_to_kill,
+            {index: {_index: "movies", _type: "bond_movie", _id: "19" }},
+            goldeneye,
+            {index: {_index: "movies", _type: "bond_movie", _id: "20" }},
+            tomorrow_never_dies,
+            {index: {_index: "movies", _type: "bond_movie", _id: "21" }},
+            the_world_is_not_enough,
+            {index: {_index: "movies", _type: "bond_movie", _id: "22" }},
+            die_another_day,
+            {index: {_index: "movies", _type: "bond_movie", _id: "23" }},
+            casino_royale2,
+            {index: {_index: "movies", _type: "bond_movie", _id: "24" }},
+            quantum_of_solace,
+            {index: {_index: "movies", _type: "bond_movie", _id: "25" }},
+            skyfall,
+            {index: {_index: "movies", _type: "bond_movie", _id: "26" }},
+            spectre
+        ]
+    });
 }
 
 //Creating a test index and adding a document
@@ -100,39 +144,4 @@ function query1967(){
 //Filtered query that returns all bond movies with the term "Casino Royale" that were made in the year 1967
 function queryCasino1967(){
 
-}
-
-//Term query that attempts to return all movies directed by Guy Hamilton but fails to do so
-function queryGuyHamilton_1(){
-    client.search({
-        index: "movies",
-        type: "bond_movie",
-        body: {
-            query: {
-               term: {
-                   director: "Guy Hamilton"
-               }
-            }
-        }
-    })
-}
-
-//Function that changes the mapping of documents with type "bond_movie" so that director is a multi_field with one of the fields being unanalyzed/prcessed before being indexed
-function changeMapping(){
-
-}
-
-//Term query that successfully returns all movies directed by Guy Hamilton following a successful change in mapping using changeMapping()
-function queryGuyHamilton_2(){
-    client.search({
-        index: "movies",
-        type: "bond_movie",
-        body: {
-            query: {
-                term: {
-                    "director.original": "Guy Hamilton"
-                }
-            }
-        }
-    })
 }

@@ -75,14 +75,13 @@ Note: for the purposes of this assignment, Logstash does not need to be installe
 1. To familiarize yourself with the JSON data format used with Elasticsearch
 2. To learn how to create and populate an index in Elasticsearch
 3. To learn how to query an elasticsearch database (including filtering results)
-4. To learn how to change the mapping of an index in Elasticsearch
-5. To learn how to delete a document and an index in Elasticsearch
+4. To learn how to delete a document and an index in Elasticsearch
 
 #### Setup:
 
 The first thing we need to do is start up our instance of Elasticsearch.  Use the terminal to navigate to the bin folder within the Elasticsearch folder you downloaded.  Once you are in this folder, run the “elasticsearch” executable (or the “elasticsearch.bat” executable if you are on Windows).  You should see it begin setup.  After it finishes, you can communicate with your Elasticsearch instance through a REST-based API on localhost port 9200. In this part of the assignment, you will be filling in parts of code included in this assignment folder.
 
-We will be using a dataset of James Bond movies throughout this portion of the assignment.  The first step is to place all of the movies into an index.  A table of the movies can be found in the “Box Office and Budget” table here: https://en.wikipedia.org/wiki/List_of_James_Bond_films.
+We will be using a dataset of James Bond movies throughout this portion of the assignment.  The first step is to place all of the movies into an index (a query that does this has been done for you except for the first movie).  A table of the movies can be found in the “Box Office and Budget” table here: https://en.wikipedia.org/wiki/List_of_James_Bond_films.
 
 Note: We are using the “setTimeout()” function to run our elasticsearch commands to ensure that they happen in the desired order.  
 
@@ -101,19 +100,11 @@ Note: We are using the “setTimeout()” function to run our elasticsearch comm
 4. query1967(): Write a term query that returns all movies made in 1967 (should have 2 hits)
 5. queryCasino1967(): Write a filtered query that returns all movies made in 1967 with the word “Casino” in the title (should have 1 hit)
 
-#### Step 3: Changing an Elasticsearch Index Mapping
-
-1. Run the provided function “queryGuyHamilton_1()”.  Notice that this does not result in any hits despite the fact that Guy Hamilton is listed as the director in 4 bond movies.  This is because we did not provide a specific desired mapping so Elasticsearch processed and indexed the “director” property using the default processing for string (which results in something like [“Guy”, “Hamilton”] not “Guy Hamilton”.
-2. changeMapping(): Write a function that changes the mapping for the “director” field to a multi-field where one of the fields is an unanalyzed string.
-3. Re-index all of the bond movies so that they are mapped under your newly-created mapping.
-4. Run the provided function “queryGuyHamilton2()” to ensure that your new mapping was successful (it should have 4 hits).
-
-#### Step 4: Intro to Kibana:
+#### Step 3: Intro to Kibana:
 
 1. Start up your Kibana instance (follow the above Elasticsearch instructions only for the Kibana folder).
 2. Point your browser to “localhost:5601”.  This should take you to the Kibana dashboard.
 3. Create a visualization that shows what percentage of bond movies have Sean Connery starring as James Bond.  Add that visualization to your dashboard.
-
 
 #### Turn in
 
