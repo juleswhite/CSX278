@@ -1,0 +1,31 @@
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.container {
+	margin: 20px auto;
+	max-width: 1200px;
+	text-align: center;
+	width: 90%
+}
+
+.header {
+	margin: 0px auto;
+}
+
+.nav-bar {
+	margin: 0px auto;
+}
+
+.nav-item {
+	max-width: 170px;
+	text-align: center;
+	width:20vw;
+}
+
+.title {
+	color: #7C9E0E;
+	font-family: "Franklin Gothic Medium", Arial, sans-serif;
+	font-size: 28px;
+}
