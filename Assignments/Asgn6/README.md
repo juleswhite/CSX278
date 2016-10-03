@@ -35,6 +35,33 @@
   - If you already use Jet Brains products, your license should automatically transfer over and WebStorm will open with no issues
   - If you don’t have a Jet Brains account, you’ll need to get a classroom license by visiting [https://www.jetbrains.com/shop/eform/students](https://www.jetbrains.com/shop/eform/students) and entering your vanderbilt email
 
+## Changes to JHipster
+
+- Go to the `SecurityConfiguration.java` file in your JHipster project and change the `configure (HttpSecurity  http)` method so reads as the following:
+
+```java
+@Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .csrf().disable()
+            .authorizeRequests().anyRequest().permitAll();
+    }
+```
+
+- Go to the `application.yml` file and uncomment the following:
+
+```
+cors: #By default CORS are not enabled. Uncomment to enable.
+        allowed-origins: "*"
+        allowed-methods: GET, PUT, POST, DELETE, OPTIONS
+        allowed-headers: "*"
+        exposed-headers:
+        allow-credentials: true
+        max-age: 1800
+```
+
+- Run `npm i` and `npm build` 
+
 ## Specifications
 
 - The finished app should interact with a preexisting JHipster server to perform Create/ Read/ Update/ Destroy operations on the underlying database.
@@ -64,9 +91,15 @@
 
 - This should give you a good idea of which fields you’ll need to add to the React application. Specifically, make sure you can read and write to the `fullName`, `emailAddress`, `phoneNumber`, `graduationDate`, `preferredcontact`, `school`, and `dorm` fields.
 - The application should consist of two screens: one for getting a list of all students, and one for adding a new student to the database. Two buttons will be used for switching between them.
+- We’ve provided skeleton code for most of the application. You are responsible for creating a table. Look in the `AllStudents.js` file, specifically the return method of the render function. 
+  - Hint: this method should return JSX that React can use to create a table.
 - For reference, here’s our standard application: 
 
 ![image of app](http://i.imgur.com/n9hEXQQ.png)
+
+## Completing the assignment
+
+Look at the `render()` function in the `AllStudents.js` file and add your JSX to the return method.
 
 
 
