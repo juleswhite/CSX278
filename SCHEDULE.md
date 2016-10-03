@@ -23,20 +23,21 @@
 	- CS Students - Spring Boot Web Application, Dependency Injection, Logging
 10.	Sept 27 - JHipster Team Assignment
 11.	Sept 29 – Docker Team Assignment
-12.	Oct 4 - JHipster Microservices Team Assignment
-13.	Oct 6 – ELK Team Assignment  
-14.	Oct 11 – Team Bidding on Mentor Projects
+11.	Oct 4 – Docker Team Assignment (cont.)
+12.	Oct 6 - JHipster Microservices Team Assignment
+13.	Oct 11 – ELK Team Assignment / Mentor Projects Out
 15.	Oct 13 – Fall Break
 16.	Oct 18 – React Team Assignment
-17.	Oct 20 – Mid-term Exam 
-18.	Oct 25 - Team Project Proposal Presentations
-19.	Oct 27 – Individual Group Meetings
-20.	Nov 1 – Individual Group Meetings
+17.	Oct 20 – Midterm Exam 
+18.     Oct 24 - Midterm Exams Due at 11:59pm, Exercises 3 & 6 Due in Student Repos by 11:59pm
+18.	Oct 25 - Individual Group Meetings or Mentor Meetings
+19.	Oct 27 – Individual Group Meetings or Mentor Meetings
+20.	Nov 1 – Team Work Day
 21.	Nov 3 – Wireframe + Technical Architecture Presentations
-22.	Nov 8 – In-class Development on Projects
-23.	Nov 10 – In-class Development on Projects
+22.	Nov 8 – Individual Group Meetings or Mentor Meetings
+23.	Nov 10 – Individual Group Meetings or Mentor Meetings
 24.	Nov 15 – Group Code Reviews
-25.	Nov 17 – MVP Demos
+25.	Nov 17 – Group Code Reviews
 26.	Nov 22 – Thanksgiving
 27.	Nov 24 – Thanksgiving
 28.	Nov 29 – Guest Lecture on Cyber-security
