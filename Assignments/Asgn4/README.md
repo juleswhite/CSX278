@@ -18,13 +18,43 @@ For this assignment we will create a simple web app that provides a simple blog 
 It will have two microservices: one managing person data, and the other managing blog data. 
 It will also have a gateway for users to interact with. 
 
+### Troubleshooting
+#### Windows Users
+
+- If you run into an error while running the **./gradlew -Pprod bootRepackage buildDocker** command that looks like:
+
+		"Unable to process incoming event 'Progress Complete'"
+
+	You can fix this by instead running the command **./gradlew --console plain -Pprod bootRepackage buildDocker**
+
+### Helpful Commands
+Here are some helpful commands that aren't mentioned in the assignmnet's reading:
+
+- // stop all running containers
+
+
+	**docker stop $(docker ps -a -q)**
+
+- // remove all containers
+	
+	**docker rm $(docker ps -a -q)**
+
+These two commands are usefull if you make a typo or run into other issues, as they return the docker environment to a clean state. 
+In particular, they can be helpful if you run into an error like the following: 
+
+	ERROR: for jhipster-registry  Cannot create container for service
+	jhipster-registry: Conflict. The name "/jhipster-registry" is already
+	in use
+
 ### Assignment Steps: 
 
-Create a new folder called MyMicroservices
-Create a subfolder called docker-compose
-Create a subfolder called MS1
-Create a subfolder called MS2 
-Create a subfolder called MyGateway
+**_Make sure that you name everything exactly as stated in the spec for grading purposes_**
+
+Create a new folder named MyMicroservices
+Create a subfolder named docker-compose
+Create a subfolder named MS1
+Create a subfolder named MS2 
+Create a subfolder named MyGateway
 
 
 #### Person Microservice
@@ -56,7 +86,7 @@ Create a new Person entity with the following properties:
 - no pagination
 
 Now build the microservice using the command 
-gradlew -Pprod buildDocker
+**gradlew -Pprod buildDocker**
 
 #### Blog Microservice
 Inside the MS2 folder, generate a new JHipster application with the same options as the first microservice, but make sure that a unique port is being used (8082, for example). This microapp will store blog posts.
@@ -123,7 +153,7 @@ Now build the gateway
 
 #### Docker Compose
 Now go back to the docker-compose folder and run the Docker compose subgenerator. Use the default directory and add both microservices and the gateway. Don't use the JHipster console 
-Run “docker-compose up -d” and you should be done. Check the port you used for the gateway and the app should be running.
+Run **docker-compose up -d** and you should be done. Check the port you used for the gateway and the app should be running.
 
 
 #### Submission 
