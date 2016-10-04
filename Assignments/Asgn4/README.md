@@ -31,10 +31,13 @@ It will also have a gateway for users to interact with.
 Here are some helpful commands that aren't mentioned in the assignmnet's reading:
 
 - // stop all running containers
-**docker stop $(docker ps -a -q)**
+
+
+	**docker stop $(docker ps -a -q)**
 
 - // remove all containers
-**docker rm $(docker ps -a -q)**
+	
+	**docker rm $(docker ps -a -q)**
 
 These two commands are usefull if you make a typo or run into other issues, as they return the docker environment to a clean state. 
 In particular, they can be helpful if you run into an error like the following: 
