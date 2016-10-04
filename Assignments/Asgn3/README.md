@@ -178,7 +178,7 @@ We are now going to create a second container image to assist in grading.
 + Base it off `hoyosjs/grading_helper` (e.g., FROM ...)
 + Change the `WORKDIR` to `/app/data/`
 + Add the vunet file to the container by adding the `ADD ./vunet /app/data/` to the Dockerfile.
-+ As the running command (hint: using `CMD`), use `/bin/bash` to run `./grade.sh` (included in the image in the working directory).
++ As the running command use `./grade.sh` (included in the image in the working directory).
 + Build the image `docker build -t grading_helper ./`.
 + Test that you can run your container by running `docker run grading_helper` (ignore the ouptut for now)
 
