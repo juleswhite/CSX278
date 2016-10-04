@@ -107,7 +107,7 @@ Once your image is built, it can now be run as a container. Let's run it.
 1. In a terminal, run the command `docker run -it jdktest /bin/bash`
 2. Your terminal propmp should change to something like "root@45e7a5e77784:/#" indicating that you are inside the container
 3. Create a new directory called "test" (e.g., `mkdir test`)
-4. Make sure the direcotry is there `ls test`
+4. Make sure the direcotry is there `ls`
 5. Exit your container with the "exit" command
 6. Check that the directory you added did not affect your local machine by running `ls` again and noticing that the directory is not on your local machine
 7. Run the command `docker run -it jdktest /bin/bash` to run the image as a container again
