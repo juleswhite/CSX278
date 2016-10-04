@@ -86,7 +86,7 @@ Create a new Person entity with the following properties:
 - no pagination
 
 Now build the microservice using the command 
-gradlew -Pprod buildDocker
+*gradlew -Pprod buildDocker*
 
 #### Blog Microservice
 Inside the MS2 folder, generate a new JHipster application with the same options as the first microservice, but make sure that a unique port is being used (8082, for example). This microapp will store blog posts.
@@ -153,7 +153,7 @@ Now build the gateway
 
 #### Docker Compose
 Now go back to the docker-compose folder and run the Docker compose subgenerator. Use the default directory and add both microservices and the gateway. Don't use the JHipster console 
-Run “docker-compose up -d” and you should be done. Check the port you used for the gateway and the app should be running.
+Run *docker-compose up -d* and you should be done. Check the port you used for the gateway and the app should be running.
 
 
 #### Submission 
