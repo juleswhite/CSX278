@@ -52,7 +52,7 @@ Some of the key instructions that you should be aware of are:
   + ENV \<variable=value\> - sets an environment variable that is present in container instances
   + ADD \<local path\> \<container path\> - copies the directory specified by "local path" from your machine to the container at "container path"
   + CMD \<some command\> - determines what command is executed when a container instance is run
-  
+  + EXPOSE \<port number\> - exposes a port on the container 
 
 ```
 # Pull base image.
@@ -100,17 +100,17 @@ Now, we need to find an existing image for our image to inherit from. To do this
 When you are done with these steps, you should have a basic Dockerfile with a FROM command specified. You can go ahead and test that your Dockerfile is correct by building it:
 
 1. Open a terminal and change to the directory with your Dockerfile
-2. Build your image with the command "docker build -t jdktest ./ " (note the "." at the end)
+2. Build your image with the command `docker build -t jdktest ./ ` (note the "." at the end)
 
 Once your image is built, it can now be run as a container. Let's run it.
 
-1. In a terminal, run the command "docker run -it jdktest /bin/bash"
+1. In a terminal, run the command `docker run -it jdktest /bin/bash`
 2. Your terminal propmp should change to something like "root@45e7a5e77784:/#" indicating that you are inside the container
-3. Create a new directory called "test" (e.g., "mkdir test")
-4. Make sure the direcotry is there "ls test"
+3. Create a new directory called "test" (e.g., `mkdir test`)
+4. Make sure the direcotry is there `ls test`
 5. Exit your container with the "exit" command
-6. Check that the directory you added did not affect your local machine by running "ls" again and noticing that the directory is not on your local machine
-7. Run the command "docker run -it jdktest /bin/bash" to run the image as a container again
+6. Check that the directory you added did not affect your local machine by running `ls` again and noticing that the directory is not on your local machine
+7. Run the command `docker run -it jdktest /bin/bash` to run the image as a container again
 8. Check if the directory that you created exists (it shouldn't)
 9. Exit the container
 
@@ -126,9 +126,9 @@ At this point, your Dockerfile should have "FROM", "ADD", "WORKDIR", and "MAINTA
 
 Let's test that we successfully added the WAR file and set the working directory for our image:
 
-1. Build the container image by running "docker build -t jhipster-project ./"
-2. Run a container from the image with "docker run -it jhipster-project /bin/bash"
-3. Check that your working directory instruction was set correctly by running "pwd" and seeing that you are in `/app/jhipster-project`
+1. Build the container image by running `docker build -t jhipster ./`
+2. Run a container from the image with `docker run -it jhipster /bin/bash`
+3. Check that your working directory instruction was set correctly by running `pwd` and seeing that you are in `/app/jhipster-project`
 4. Check that your `jhipster-0.0.1-SNAPSHOT.war` file is there
 5. Check that you can run your jhipster app by typing `java -jar jhipster-0.0.1-SNAPSHOT.war --spring.profiles.active=dev,swagger`
 6. When the JHipster logo shows up, kill the application with `control+c`
@@ -143,8 +143,8 @@ Let's make the changes to expose the port that we need and run the JHipster appl
 
 Let's build your container again and run it:
 
-1. `docker build -t jhipster-project ./`
-2. Now, we don't need to manually start the JHipster application and can map port 8080 to the container: `docker run -p 8080:8080 jhipster-project`
+1. `docker build -t jhipster ./`
+2. Now, we don't need to manually start the JHipster application and can map port 8080 to the container: `docker run -p 8080:8080 jhipster`
 3. Wait until you see what is shown below and then open a browser to the "Local" address shown.
 
 ```
@@ -156,59 +156,78 @@ Let's build your container again and run it:
 ```
 4. To stop the container, use `CTRL + C`. 
 5. If that doesn't work, open up another terminal and type "docker ps"
-6. Look for a line like `0aaf5653efcc        jhipster-project    "/bin/sh -c 'java -ja"   About a minute ago   Up About a minute   0.0.0.0:8080->8080/tcp   loving_noether`
-7. Copy the ID that comes before "jhipster-project"
-8. Run the command "docker stop \<ID\>
+6. Look for a line like `0aaf5653efcc        jhipster    "/bin/sh -c 'java -ja"   About a minute ago   Up About a minute   0.0.0.0:8080->8080/tcp   loving_noether`
+7. Copy the ID that comes before "jhipster"
+8. Run the command `docker stop \<ID\>`
 
 You now have a complete container image for your JHipster app. 
 
 Let's review some of the differences in the run commands that we used. 
 
-1. `docker run -it jhipster-project /bin/bash` runs the command "/bin/bash" inside of the container in order to log you into a shell within the container. Normally, you don't login to containers, but it can be useful for debugging or incrementally checking that a container is being built as you expect.
-2. `docker run -d -p 8080:8080 jhipster-project` launches your container in daemon mode and maps port 8080 to port 8080 on the container. The `-d` flag specifies that the container is being run in daemon mode. The `-p 8080:8080` flag specifies that docker should map port 8080 on your local machine to port 8080 on the container. Since we aren't specifying a command after "jhipster-project", docker looks for our CMD instruction in the Dockerfile and runs it. 
+1. `docker run -it jhipster /bin/bash` runs the command "/bin/bash" inside of the container in order to log you into a shell within the container. Normally, you don't login to containers, but it can be useful for debugging or incrementally checking that a container is being built as you expect.
+2. `docker run -d -p 8080:8080 jhipster` launches your container in daemon mode and maps port 8080 to port 8080 on the container. The `-d` flag specifies that the container is being run in daemon mode. The `-p 8080:8080` flag specifies that docker should map port 8080 on your local machine to port 8080 on the container. Since we aren't specifying a command after "jhipster", docker looks for our CMD instruction in the Dockerfile and runs it. 
 
 
 ### Getting the grading dependency configured
-+ Create a file called `vunet` and write your vunetid. Double check the spelling.
-+ Create a new dockerfile called `dockerfile2` in some other folder.
-+ Base it off `hoyosjs/grading_helper`
+
+We are now going to create a second container image to assist in grading. 
+
++ Create a new folder outside of the current one named "grading_helper"
++ Inside of the new folder, create a file called `vunet` and write your vunetid. Double check the spelling.
++ Create a new Dockerfile in this folder.
++ Base it off `hoyosjs/grading_helper` (e.g., FROM ...)
 + Change the `WORKDIR` to `/app/data/`
-+ Add the vunet file to the container by adding the `ADD ./vunet .` to the Dockerfile.
++ Add the vunet file to the container by adding the `ADD ./vunet /app/data/` to the Dockerfile.
 + As the running command (hint: using `CMD`), use `/bin/bash` to run `./grade.sh` (included in the image in the working directory).
-+ Build the image by saying `grading_helper`.
++ Build the image `docker build -t grading_helper ./`.
++ Test that you can run your container by running `docker run grading_helper` (ignore the ouptut for now)
 
 ### Docker compose with grading dependency 
+
+You have now built two separate container images and run them as container instances. You should have a basic understanding of how Docker works. Next, we are going to look at how we launch and orchestrate multiple containers with Docker Compose.
+
+For this next step, we are going to create a configuration that launches your jhipster container and the grading_helper simulteaneously. Docker Compose is a tool that orchestrates multi-container launches. Docker Compose uses a file called "docker-compose.yml". Let's create a basic Docker Compose configuration that includes the two containers that we created:
+
 + Create a file `docker-compose.yml`
-+ Specify it's a version 2 docker-compose by starting the file with `version: '2'`
-+ Add a service called jhipster that depends on your image and forward ports as necessary.
-+ Add a service called grading that depends on the grading image you built. 
-	-Each service gets its own top level ‘object’ written as ‘service1’ or ‘service2’.
-	-Beneath each you need to specify the image name, the ports each uses, or the dockerfile used to build it. For example, we're basing both of the services we are using off images, so you won't need the `build` or `dockerfile` keywords.  
++ Add the following to the file (make sure to replace any tabs with spaces):
 
-	 Example:
-	 ```yaml
-	version: '2'
-	services:
-		jhipster:
-		  build: .
-		  dockerfile: Dockerfile
-		  ports:
-		    - "8080:8080"
-		  volumes:
-		    - .:/usr/src/app
+```yaml
+version: '2'
+services:
+      jhipster:
+         image: jhipster
+         ports:
+           - "8080:8080"
+         volumes:
+           - .:/usr/src/app
 
-		grading_helper:
-		  image: hello-world 
-		  ports:
-		    - "8080:8080"
-		  volumes:
-		    - .:/usr/src/app
-		  stdin_open: true
-		  tty: true
-		  depends_on:
-		  	- jhipster
-	 ```
+      grading_helper:
+          image: hello-world 
+          volumes:
+            - .:/usr/src/app
+          stdin_open: true
+          tty: true
+          depends_on:
+            - jhipster
+```
+
+Here is what this file is doing:
+
++ The first line specifies that it's a version 2 docker-compose file
++ Within the "services" section, we specify a name for each container instance that we would like launched (e.g., jhipster and grading_helper)
++ Each container instance starts with an "image:" instruction identifying the container image to use for the instance
++ The jhipster container image is launched and has port 8080 exposed (e.g., the ports: section is the equivalent of including `-p 8080:8008` in the `docker run` command)
++ The hipster container has the current directory mounted on it under the /usr/src/app path so that any data it stores there will be persisted on the host (e.g., it won't disappear like our test directory did earlier)
++ We add another container instance called "grading_helper" that uses our "grading_helper" container image. 
+
+Now, let's ask Docker Compose to start our containers for us:
+	 
 + Run `docker-compose up`
++ Wait for the message showing that JHipster is running
++ Try accessing JHipster in your browser the same way that you did before
+
+Finally, let's generate proof for the grader that we got all of this working:
+
 + Run `docker run -it --rm grading_helper` on another terminal and follow the instructions.
 + If you performed all steps correctly you should get a token which you should [send here](https://goo.gl/forms/Rq0kb2PowbwHEMr23).
 
