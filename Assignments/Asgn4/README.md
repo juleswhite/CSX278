@@ -23,7 +23,7 @@ It will also have a gateway for users to interact with.
 
 - If you run into an error while running the **./gradlew -Pprod bootRepackage buildDocker** command that looks like:
 
-		*"Unable to process incoming event 'Progress Complete'"*
+		"Unable to process incoming event 'Progress Complete'"
 
 	You can fix this by instead running the command **./gradlew --console plain -Pprod bootRepackage buildDocker**
 
@@ -31,21 +31,21 @@ It will also have a gateway for users to interact with.
 Here are some helpful commands that aren't mentioned in the assignmnet's reading:
 
 - // stop all running containers
-	**docker stop $(docker ps -a -q)**
+**docker stop $(docker ps -a -q)**
 
 - // remove all containers
-	**docker rm $(docker ps -a -q)**
+**docker rm $(docker ps -a -q)**
 
 These two commands are usefull if you make a typo or run into other issues, as they return the docker environment to a clean state. 
 In particular, they can be helpful if you run into an error like the following: 
 
-	*ERROR: for jhipster-registry  Cannot create container for service
+	ERROR: for jhipster-registry  Cannot create container for service
 	jhipster-registry: Conflict. The name "/jhipster-registry" is already
-	in use*
+	in use
 
 ### Assignment Steps: 
 
-**__Make sure that you name everything exactly as stated in the spec for grading purposes__**
+**_Make sure that you name everything exactly as stated in the spec for grading purposes_**
 
 Create a new folder named MyMicroservices
 Create a subfolder named docker-compose
