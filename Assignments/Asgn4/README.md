@@ -168,7 +168,7 @@ You can access the registry at: http://localhost:8761
 
 
 #### Submission 
-Look for a file named "docker-compose.yml" in your docker-compose directory. Add this file to your class github repo under the Asgn4 directory.
+Look for a file named "docker-compose.yml" in your docker-compose directory. Add this file to your class github repo under the Asgn4 directory. If you are a Windows user, submit the version of docker-compose.yml that JHipster generated and not the version that you downloaded from this repo.
 
 
 ### Acknowledgement
