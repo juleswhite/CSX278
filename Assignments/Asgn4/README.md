@@ -90,7 +90,7 @@ Create a new Person entity with the following properties:
 - no pagination
 
 Now build the microservice using the command 
-**gradlew -Pprod buildDocker**
+**gradlew -Pprod bootRepackage buildDocker**
 
 #### Blog Microservice
 Inside the MS2 folder, generate a new JHipster application with the same options as the first microservice, but make sure that a unique port is being used (8082, for example). This microapp will store blog posts.
