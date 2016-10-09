@@ -116,17 +116,15 @@ Add your code to Solutions/Asgn5 in your repository.
 The goal of this assignment is to learn how to use the JHipster Console to monitor the performance and logging of a JHipster service. This console uses the ELK stack, and it is much easier to implement than trying to implement each layer of the stack independently.
 
 #### Installation
- This project will build on the JHipster Microservice Team's project. Copy your project from your Solutions/Asgn4 directory into a folder called "Part2" in your Solutions/Asgn5 directory. After you have done that, carefully read through The [JHipster Console Installation Instructions](https://jhipster.github.io/monitoring/) to get JHipster up and running.
+ This project will build on the JHipster Microservice Team's project. Read through The [JHipster Console Installation Instructions](https://jhipster.github.io/monitoring/) to learn about the console.
  
 ##### Necessary Changes
 
-First, you need to set up your microservice project to enable logging. There are 2 places in "src/main/resources/config/application-dev.yml" that you need to change to `enabled: true`. These are indicated at the webpage above.
+The console is easy to set up once you have a working JHipster Microservice. Remove the `docker-compose.yml` file you generated in the previous assignment. Inside the docker-compose directory, run `yo jhipster:docker-compose` to generate a new docker-compose file. This yes, select "Yes" when it asks if you want to integrate the JHipster Console. This will generate the necessary files including the new `docker-compose.yml` file that includes the services necessary to generate logs and run the console.
 
-Next, make sure the root of your project contains a file called `docker-compose.yml`. This file should be included by JHipster microservices setup, but if you do not have it or are having to use a monolith due to gradle errors, you can find that file [here](https://raw.githubusercontent.com/jhipster/jhipster-console/master/bootstrap/docker-compose.yml).
+If you are running a Windows machine, you may need to replace this file with the `docker-compose.yml` file included in this directory (similar to the previous assignment).
 
-Now, open up the docker terminal and run `docker-machine ip`. This indicates the ip address your JHipster console will be availible on. Open up `application-dev.yml` again and change `host: localhost` to `host: your_ip` under jhipster.logging.logstash. 
-
-All appropriate changes have been made, so to view the console simply start the console by navigating to the directory with the docker-compose.yml file in your docker terminal and running `docker-compose up`. Then, start the microservice by running `./gradlew bootrun` from a different terminal in the same directory. You can find the console at your_ip:5601.
+You can now start the containers by running `docker-compose up -d`. Once the containers start, you can access the console by directing a browser to `machine-ip:5601`. You can find your machine's ip by running `docker-machine ip`.
 
 ##### Instructions
 
