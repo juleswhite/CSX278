@@ -138,8 +138,6 @@ Kibana comes with some pre-made visualizations that you can quickly add to your 
 
 You will first create a visualization based on the automatically added performance metrics. Navigate to the JHipster console in a browser and select the "Visualize" tab. From here, create a new line chart using the logstash pattern that maps the number of "INFO" logs over time. Under "buckets" you will choose "x-axis" with a "Date Histogram" aggregation, "@timestamp" field and and "Auto" Interval. The y-axis should be labeled "INFO Logs" and the x-axis should be "@timestamp per 30 seconds". Save this visualization as "INFO Logs Over Time" and then add it to your dashboard. Click the arrow at the bottom chart and select the "Request" option. Copy the json object into a file called **"infologsrequest.json"**. Next, select the "Response" option and copy the json object into a file called **"infologsresponse.json"**.
 
-Note: For this part, you will need to find a unique log that is called each time an object is created and then query for that. Make sure the visualization includes all 5 people you just created. The discover tab is useful for finding the log.
-
 The last visualization you should create is one of your choosing. Use a new query and design the visualization however you like. Add this new visualization to your dashboard. Click the arrow at the bottom chart on the dashboard and select the "Request" option. Copy the json object into a file called **"myrequest.json"**. Next, select the "Response" option and copy the json object into a file called **"myresponse.json"**.
 
 To turn in this part of the assignment, create the folder Solutions/Asgn5 in your repo and add the 8 json files and a screenshot of your dashboard.
