@@ -46,16 +46,24 @@ spectre = {title: "Spectre", year: 2015, bond: "Daniel Craig", director: "Sam Me
 //setTimeout(queryKill, 6000);
 //setTimeout(query1967, 7000);
 //setTimeout(queryCasino1967, 8000);
+//setTimeout(addBondMovies, 10000);
+//setTimeout(queryGuyHamilton_2, 13000);
+
 
 
 //Populating "movies" index w/ all of the bond movie JSONs
 //Using create() for first and bulk() to combine all other operations into a single request
 function addMovie1(){
- 
+    client.create({
+        index: "",
+        type: "",
+        id: "",
+        body: 
+    });
 }
 
 function addBondMovies(){
-client.bulk({
+    client.bulk({
         body: [
             {index: {_index: "movies", _type: "bond_movie", _id: "2" }},
             from_russia_with_love,
@@ -113,35 +121,118 @@ client.bulk({
 
 //Creating a test index and adding a document
 function createTest() {
-
+    client.create({
+        index: "",
+        type: "",
+        id: "",
+        body: { test: ""}
+    });
 }
 
 //Deleting the document from the test index
 function deleteTest() {
-
+    client.delete({
+        index: "",
+        type: "",
+        id: ""
+    });
 }
 
 //Query that returns all bond movies
 function queryAll() {
-
+    client.search({
+        index: "",
+        type: ""
+    })
 }
 
 //Query that returns the bond movie with an ID of 1
 function getID1(){
-
+    client.get({
+        index: "",
+        type: "",
+        id: ""
+    })
 }
 
 //Query_string query that returns all bond movies that have the word "kill" somewhere in their JSON body
 function queryKill(){
-
+    client.search({
+        index: "movies",
+        type: "bond_movie",
+        body: {
+            query: {
+                query_string: {
+                    query: ""
+                }
+            }
+        }
+    })
 }
 
 //Term query that returns all bond movies that were made in the year 1967
 function query1967(){
-
+    client.search({
+        index: "movies",
+        type: "bond_movie",
+        body: {
+            query: {
+                term: {
+                    year: 
+                }
+            }
+        }
+    })
 }
 
 //Filtered query that returns all bond movies with the term "Casino Royale" that were made in the year 1967
 function queryCasino1967(){
+    client.search({
+        index: "movies",
+        type: "bond_movie",
+        body: {
+            query: {
+                filtered: {
+                    query: {
+                        query_string: {
+                            query: ""
+                        }
+                    },
+                    filter: {
+                        term: {year: }
+                    }
+                }
+            }
+        }
+    })
+}
 
+//Term query that attempts to return all movies directed by Guy Hamilton but fails to do so
+function queryGuyHamilton_1(){
+    client.search({
+        index: "movies",
+        type: "bond_movie",
+        body: {
+            query: {
+               term: {
+                   director: ""
+               }
+            }
+        }
+    })
+}
+
+//Term query that successfully returns all movies directed by Guy Hamilton following a successful change in mapping using changeMapping()
+function queryGuyHamilton_2(){
+    client.search({
+        index: "movies",
+        type: "bond_movie",
+        body: {
+            query: {
+                term: {
+                    "director.original": ""
+                }
+            }
+        }
+    })
 }

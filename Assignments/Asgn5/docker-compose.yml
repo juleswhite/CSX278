@@ -1,0 +1,90 @@
+version: '2'
+services:
+    ms1-app:
+        image: ms1
+        links:
+            - ms1-mysql:mysql
+            - registry
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_CLOUD_CONFIG_URI=http://admin:admin@registry:8761/config
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/ms1?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=30
+            - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://admin:admin@registry:8761/eureka/
+            - JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET=72194825d2b61204a1e49d9bcee3820569660c6f
+
+    ms1-mysql:
+        container_name: ms1-mysql
+        image: mysql:5.7.13
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=ms1
+        command: mysqld --lower_case_table_names=1 --skip-ssl
+    
+    ms2-app:
+        image: ms2
+        links:
+            - ms2-mysql:mysql
+            - registry
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_CLOUD_CONFIG_URI=http://admin:admin@registry:8761/config
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/ms2?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=60
+            - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://admin:admin@registry:8761/eureka/
+            - JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET=72194825d2b61204a1e49d9bcee3820569660c6f
+    ms2-mysql:
+        container_name: ms2-mysql
+        image: mysql:5.7.13
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=ms2
+        command: mysqld --lower_case_table_names=1 --skip-ssl
+    
+    mygateway-app:
+        image: mygateway
+        links:
+            - mygateway-mysql:mysql
+            - registry
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_CLOUD_CONFIG_URI=http://admin:admin@registry:8761/config
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/mygateway?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATA_CASSANDRA_CONTACTPOINTS=cassandra
+            - JHIPSTER_SLEEP=90
+            - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://admin:admin@registry:8761/eureka/
+            - JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET=72194825d2b61204a1e49d9bcee3820569660c6f
+        ports:
+            - 8080:8080
+    mygateway-mysql:
+        container_name: mygateway-mysql
+        image: mysql:5.7.13
+        environment:
+            - MYSQL_USER=root
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=mygateway
+        command: mysqld --lower_case_table_names=1 --skip-ssl
+    
+    registry:
+        extends:
+            file: jhipster-registry.yml
+            service: jhipster-registry
+        environment:
+            - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://admin:admin@registry:8761/eureka/
+            - JHIPSTER_SECURITY_AUTHENTICATION_JWT_SECRET=72194825d2b61204a1e49d9bcee3820569660c6f
+
+    jhipster-elasticsearch:
+        extends:
+            file: jhipster-console.yml
+            service: jhipster-elasticsearch
+    jhipster-logstash:
+        extends:
+          file: jhipster-console.yml
+          service: jhipster-logstash
+    jhipster-console:
+        extends:
+            file: jhipster-console.yml
+            service: jhipster-console
+
