@@ -236,3 +236,13 @@ function queryGuyHamilton_2(){
         }
     })
 }
+
+
+//Module Exports
+module.exports = {
+  addMovie1: addMovie1,
+  createTest: createTest,
+  deleteTest: deleteTest,
+  getID1: getID1,
+  addBondMovies: addBondMovies
+};
