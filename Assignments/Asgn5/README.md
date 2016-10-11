@@ -27,6 +27,8 @@ The other articles selected were written by people with extensive experience usi
 
 ## Assignment Spec
 
+Please turn in Part 1 for credit. In order to help you enjoy your fall break, Part 2 will be counted as extra credit.
+
 ### Before Class
 
 #### Goals
