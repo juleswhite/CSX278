@@ -58,7 +58,7 @@ function addMovie1(){
         index: "",
         type: "",
         id: "",
-        body: 
+        body: ""
     });
 }
 
@@ -178,7 +178,7 @@ function query1967(){
         body: {
             query: {
                 term: {
-                    year: 
+                    year: 0
                 }
             }
         }
@@ -199,7 +199,7 @@ function queryCasino1967(){
                         }
                     },
                     filter: {
-                        term: {year: }
+                        term: {year: 0}
                     }
                 }
             }
