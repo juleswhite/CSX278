@@ -32,16 +32,16 @@
 18.     Oct 24 - Midterm Exams Due at 11:59pm, Exercises 3 & 6 Due in Student Repos by 11:59pm
 18.	Oct 25 - Individual Group Meetings or Mentor Meetings
 19.	Oct 27 – Individual Group Meetings or Mentor Meetings
-20.	Nov 1 – Team Work Day
-21.	Nov 3 – Wireframe + Technical Architecture Presentations
+20.	Nov 1 – Individual Group Meetings or Mentor Meetings
+21.	Nov 3 – Individual Group Meetings or Mentor Meetings
 22.	Nov 8 – Individual Group Meetings or Mentor Meetings
 23.	Nov 10 – Individual Group Meetings or Mentor Meetings
 24.	Nov 15 – Group Code Reviews
 25.	Nov 17 – Group Code Reviews
 26.	Nov 22 – Thanksgiving
 27.	Nov 24 – Thanksgiving
-28.	Nov 29 – Guest Lecture on Cyber-security
-29.	Dec 1 – Team Work Day
+28.	Nov 29 – Individual Group Meetings or Mentor Meetings
+29.	Dec 1 – Individual Group Meetings or Mentor Meetings
 30.	Dec 6 – Final Presentations
 31.	Dec 8 – Final Presentations
 
