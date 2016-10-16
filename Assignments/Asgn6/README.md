@@ -37,7 +37,7 @@
 
 ## Changes to JHipster
 
-- Go to the `SecurityConfiguration.java` file in your JHipster project and change the `configure (HttpSecurity  http)` method so reads as the following:
+- Go to the `SecurityConfiguration.java` file in your JHipster project (found in `/src/main/java/com/theNameYouChose/jhipster/config`) and change the `configure (HttpSecurity  http)` method so reads as the following:
 
 ```java
 @Override
