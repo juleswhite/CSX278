@@ -48,7 +48,7 @@
     }
 ```
 
-- Go to the `application.yml` file and uncomment the following:
+- Go to the `application.yml` file (in `/src/main/resources/config`) and uncomment the following:
 
 ```
 cors: #By default CORS are not enabled. Uncomment to enable.
