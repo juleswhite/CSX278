@@ -43,8 +43,9 @@
 @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            .csrf().disable()
-            .authorizeRequests().anyRequest().permitAll();
+        // most lines omitted for brevity
+        .and()
+            .antMatchers("/api/**").permitAll() // original value is .authenticated()
     }
 ```
 
