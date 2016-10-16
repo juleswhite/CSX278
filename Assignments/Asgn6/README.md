@@ -37,18 +37,19 @@
 
 ## Changes to JHipster
 
-- Go to the `SecurityConfiguration.java` file in your JHipster project and change the `configure (HttpSecurity  http)` method so reads as the following:
+- Go to the `SecurityConfiguration.java` file in your JHipster project (found in `/src/main/java/com/theNameYouChose/jhipster/config`) and change the `configure (HttpSecurity  http)` method so reads as the following:
 
 ```java
 @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            .csrf().disable()
-            .authorizeRequests().anyRequest().permitAll();
+        // most lines omitted for brevity
+        .and()
+            .antMatchers("/api/**").permitAll() // original value is .authenticated()
     }
 ```
 
-- Go to the `application.yml` file and uncomment the following:
+- Go to the `application.yml` file (in `/src/main/resources/config`) and uncomment the following:
 
 ```
 cors: #By default CORS are not enabled. Uncomment to enable.
