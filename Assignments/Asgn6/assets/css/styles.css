@@ -1,9 +1,19 @@
 button {
 	background-color: transparent;
 	border: none;
+	color: #7C9E0E;
+	font-family: "Franklin Gothic Medium", Arial, sans-serif;
+	max-width: 170px;
+	text-align: center;
+	width:20vw;
+}
+
+table {
+	margin: auto;
 }
 
 .container {
+	line-height: 30px;
 	margin: 20px auto;
 	max-width: 1200px;
 	text-align: center;
@@ -16,12 +26,6 @@ button {
 
 .nav-bar {
 	margin: 0px auto;
-}
-
-.nav-item {
-	max-width: 170px;
-	text-align: center;
-	width:20vw;
 }
 
 .title {
