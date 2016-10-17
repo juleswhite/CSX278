@@ -13,10 +13,12 @@
 - [Mozilla Developer Network: the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction/)
 - [Eloquent JavaScript](http://eloquentjavascript.net/)
 
+## Pre-Class Reading
+To verify that you have downloaded everything before class, use the command `node –v` and fill out the following [form](https://docs.google.com/a/vanderbilt.edu/forms/d/e/1FAIpQLSd6R25o04TA2Z9MfowATtHjJ_FbgfBjXwexXzLfBrxOD7Xkwg/viewform?c=0&w=1) with the output of the command.
+
 ## Installation
 
 - JHipster already installed and configured from previous tutorial
-  - Follow [these instructions](http://stackoverflow.com/questions/36142155/cors-origin-spring-boot-jhipster) to make sure that CORS is disabled for JHipster
 - You’ll need an http server installed to run this application
   - Install [Node.js](https://nodejs.org/en/) (THE LATEST VERSION), then open up a terminal and run `npm install -g http-server`. This will download and install an http server you can use for this tutorial.
 - Make a directory for the application and run `http-server -p 9090` in that directory to start serving files on localhost:9090
@@ -37,7 +39,7 @@
 
 ## Changes to JHipster
 
-- Go to the `SecurityConfiguration.java` file in your JHipster project and change the `configure (HttpSecurity  http)` method so reads as the following:
+- Go to the `SecurityConfiguration.java` file in your JHipster project (found in `/src/main/java/com/theNameYouChose/jhipster/config`) and change the `configure (HttpSecurity  http)` method so reads as the following:
 
 ```java
 @Override
@@ -48,7 +50,7 @@
     }
 ```
 
-- Go to the `application.yml` file and uncomment the following:
+- Go to the `application.yml` file (in `/src/main/resources/config`) and uncomment the following:
 
 ```
 cors: #By default CORS are not enabled. Uncomment to enable.
