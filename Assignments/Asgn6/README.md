@@ -14,7 +14,10 @@
 - [Eloquent JavaScript](http://eloquentjavascript.net/)
 
 ## Pre-Class Reading
+
 To verify that you have downloaded everything before class, use the command `node –v` and fill out the following [form](https://docs.google.com/a/vanderbilt.edu/forms/d/e/1FAIpQLSd6R25o04TA2Z9MfowATtHjJ_FbgfBjXwexXzLfBrxOD7Xkwg/viewform?c=0&w=1) with the output of the command.
+
+Also, make sure that you can still run the JHipster application from assignment 1. Make the security changes (lookk in Security section)
 
 ## Installation
 
@@ -25,6 +28,7 @@ To verify that you have downloaded everything before class, use the command `nod
   - **THIS IS IMPORTANT! JHipster runs on 8080 so our React app will have to run on a different port.**
 
 ### Downloading and Installing Webstorm
+
 *If you already have an IDE that you use for Javascript, no need to download WebStorm. If you don’t want to download an IDE solely for this assignment, feel free to use a text editor*
 
 1. Go to [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/) and click download in the upper right corner
@@ -67,41 +71,30 @@ cors: #By default CORS are not enabled. Uncomment to enable.
 ## Specifications
 
 - The finished app should interact with a preexisting JHipster server to perform Create/ Read/ Update/ Destroy operations on the underlying database.
-- Data from JHipster will be formatted as an array of JSON objects (each representing one student), as follows:
+For simplicity, we'll only cover Read (GET) and Create (POST) operations in this assignment.
+- We'll only interact with the Dormitory API from Assignment 1, at the path `/api/dormitory`.
 
 ```json
-[ {
- "id" : 1,
- "fullName" : "Harrison Stall",
- "emailAddress" : "hstall2529",
- "phoneNumber" : "8645461688",
- "graduationDate" : "2018-05-11",
- "preferredcontact" : {
-   "id" : 3,
-   "nameOfChoice" : "Facebook"
- },
- "school" : {
-   "id" : 1,
-   "schoolName" : "Engineering"
- },
- "dorm" : {
-   "id" : 2,
-   "dormName" : "Off-campus"
- }
-} ]
+[
+  { "id": 0, "dormName": "TestDorm" }
+]
 ```
 
-- This should give you a good idea of which fields you’ll need to add to the React application. Specifically, make sure you can read and write to the `fullName`, `emailAddress`, `phoneNumber`, `graduationDate`, `preferredcontact`, `school`, and `dorm` fields.
-- The application should consist of two screens: one for getting a list of all students, and one for adding a new student to the database. Two buttons will be used for switching between them.
-- We’ve provided skeleton code for most of the application. You are responsible for creating a table. Look in the `AllStudents.js` file, specifically the return method of the render function. 
+- This should give you a good idea of which fields you’ll need to add to the React application.
+  - Keep in mind that the `id` field will be populated automatically. Therefore, you'll only need to fill in a "dormName" field for POST requests.
+- The application will consist of two screens: on one, you can enter the name of a dorm and POST it to the API; on the second, you'll GET a list of all dorms.
+- We’ve provided skeleton code for most of the application. You are responsible for creating POST requests and creating a table in HTML following a GET request.
   - Hint: this method should return JSX that React can use to create a table.
-- For reference, here’s our standard application: 
 
-![image of app](http://i.imgur.com/n9hEXQQ.png)
+For reference, here's our implementation:
+
+![reference](http://i.imgur.com/REjWWEB.png)
 
 ## Completing the assignment
 
-Look at the `render()` function in the `AllStudents.js` file and add your JSX to the return method.
+Look at the `.createClass()` functions in the `AllDormitories.js` and `AddDormitory.js` files and add your code to the return method.
+We've added `//TODO` statements to indicate where you should make changes.
+Run the application, verify that things work, and push the results to your repository.
 
 
 
@@ -114,11 +107,11 @@ The date of publication/ last update for each resource was checked to ensure tha
 
 ## Team Members
 
-- Santaguida,John S
-- Stahl,Joseph
-- Stall,Harrison R
-- Weitendorf,Frederick D
-- Yeonas,Victoria Trent
-- Roth,Brittany D
-- Kanai,Yoko M
+- Santaguida, John S
+- Stahl, Joseph
+- Stall, Harrison R
+- Weitendorf, Frederick D
+- Yeonas, Victoria Trent
+- Roth, Brittany D
+- Kanai, Yoko M
 - Weber, Betsy
