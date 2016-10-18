@@ -13,18 +13,20 @@
 - [Mozilla Developer Network: the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction/)
 - [Eloquent JavaScript](http://eloquentjavascript.net/)
 
-## Pre-Class Reading
+## Pre-Class Assignment
 
 To verify that you have downloaded everything before class, use the command `node –v` and fill out the following [form](https://docs.google.com/a/vanderbilt.edu/forms/d/e/1FAIpQLSd6R25o04TA2Z9MfowATtHjJ_FbgfBjXwexXzLfBrxOD7Xkwg/viewform?c=0&w=1) with the output of the command.
 
-Also, make sure that you can still run the JHipster application from assignment 1. Make the security changes (lookk in Security section)
+Also, make sure that you can still run the JHipster application from assignment 1. Make the security changes (look in Security section)
 
 ## Installation
 
 - JHipster already installed and configured from previous tutorial
 - You’ll need an http server installed to run this application
   - Install [Node.js](https://nodejs.org/en/) (THE LATEST VERSION), then open up a terminal and run `npm install -g http-server`. This will download and install an http server you can use for this tutorial.
-- Make a directory for the application and run `http-server -p 9090` in that directory to start serving files on localhost:9090
+- Sync your class folder to get the latest version of Assignment 6. Once you've updated the folder, cd to the Asgn6 directory and run `npm install` to install the various prerequisites. 
+- Run `http-server -p 9090` in that directory to start serving files on localhost:9090
+  - This should make `index.html` available at `localhost:9090` in your web browser.
   - **THIS IS IMPORTANT! JHipster runs on 8080 so our React app will have to run on a different port.**
 
 ### Downloading and Installing Webstorm
@@ -93,11 +95,14 @@ For reference, here's our implementation:
 ## Completing the assignment
 
 Look at the `.createClass()` functions in the `AllDormitories.js` and `AddDormitory.js` files and add your code to the return method.
+There's also a single item to do in `App.js`.
 We've added `//TODO` statements to indicate where you should make changes.
+
+**To run the application, first run `npm script build`.** This will package the various JS files together to be served to the web browser.
+Once this is done, kill/ restart the HTTP server (`http-server -p 9090`) and reload the web page.
+Also, make sure that JHipster is running so that you have an API to interact with.
+
 Run the application, verify that things work, and push the results to your repository.
-
-
-
 
 ## Acknowledgement
 
