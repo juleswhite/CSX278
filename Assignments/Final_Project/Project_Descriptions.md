@@ -89,8 +89,7 @@ Available positions on this team are:
   2. Java / Javascript Developer
   3. Java / Javascript Developer
 
-## Team 11 - Remote Monitoring Dashboards & Uber Alerting -
-https://github.com/X278-2016/team-11
+## Team 11 - Remote Monitoring Dashboards & Uber Alerting - https://github.com/X278-2016/team-11
 
 This team will develop a visualization and alerting platform for routing 
 technicians to remote sights for repairs using Elasticsearch,
