@@ -13,11 +13,11 @@
 - [Mozilla Developer Network: the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction/)
 - [Eloquent JavaScript](http://eloquentjavascript.net/)
 
-## Pre-Class Reading
+## Pre-Class Assignment
 
 To verify that you have downloaded everything before class, use the command `node –v` and fill out the following [form](https://docs.google.com/a/vanderbilt.edu/forms/d/e/1FAIpQLSd6R25o04TA2Z9MfowATtHjJ_FbgfBjXwexXzLfBrxOD7Xkwg/viewform?c=0&w=1) with the output of the command.
 
-Also, make sure that you can still run the JHipster application from assignment 1. Make the security changes (lookk in Security section)
+Also, make sure that you can still run the JHipster application from assignment 1. Make the security changes (look in Security section)
 
 ## Installation
 
