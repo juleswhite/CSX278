@@ -29,7 +29,8 @@ anywhere that they would like. You can schedule access to a conference room in t
 by contacting Deanna Meador (deanna.n.meador@vanderbilt.edu). All team members are
 expected to attend and contribute to the stand-up meeting.  Team members are free to 
 use any remaining class time to complete their individual contributions to the project 
-for the class period and push them to the GitHub repo. 
+for the class period and push them to the GitHub repo. All projects must be opensource
+under the Apache 2 or GPL license.
 
 Every other class period, your team will meet with the instructor to discuss progress
 and challenges that you are facing. During these meetings, each team member will 
