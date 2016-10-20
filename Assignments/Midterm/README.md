@@ -16,13 +16,32 @@ of work.
 Please implement an HTTP application that allows you to store information related to 
 homework assignments, submissions, and grades. An overview of the required data model
 is available here: https://dl.dropboxusercontent.com/u/2340553/data_model.png. The 
-application should store the following entities and all fields should be required:
+application should store the entities and fields below. All fields should be required.
+
+Each entity must support a REST API that supports viewing, adding, modifying, and deleting
+entities. Assuming that "foo" is the plural form of the entity's name, each entity should
+support the following HTTP API:
+
++ GET /api/foo - This should return a JSON array containing the list of all entities that
+                 have been stored so far or an empty array if none have been stored.
+                 
++ POST /api/foo - This request path should accept POST requests with application/json in
+                 the HTTP body and create a new entity with the specified data. The JSON
+                 in the request body should match the format for the entity shown in the
+                 list of entities below.
+                 
++ GET /api/foo/{id} - This request path should return the JSON for just the specific entity
+                 with the specified ID in the path. The JSON in the response body should match 
+                 the format for the entity shown in the list of entities below.
+                 
++ DELETE /api/foo/{id} - This request path should delete the specific entity with the specified 
+                 ID in the path. 
+
+### Homework 
+  + title 
+  + due (ZonedDateTime if using JHipster)
 
 ```
-Homework 
-  title 
-  due (ZonedDateTime if using JHipster)
-
 JSON Format:
 
   {
@@ -30,13 +49,15 @@ JSON Format:
     "id": 0,
     "title": "string"
   }
+```
 
 
-Student 
-  name
-  studentId // e.g., bobj10
-  email 
+### Student 
+  + name
+  + studentId // e.g., bobj10
+  + email 
 
+```
 JSON Format:
 
   {
@@ -45,11 +66,14 @@ JSON Format:
     "name": "string",
     "studentId": "string"
   }
+```
 
-Instructor 
-  name
-  email
 
+### Instructor 
+  + name
+  + email
+
+```
 JSON Format:
 
   {
@@ -57,13 +81,14 @@ JSON Format:
     "id": 0,
     "name": "string"
   }
+```
 
-Submission 
-  date (ZonedDateTime if using JHipster)
-  homework - the homework specification for the submission (a many to one relationship owned by Submission)
-  student - the student that is submitting the homework (a one to many relationship owned by Student)
+### Submission 
+  + date (ZonedDateTime if using JHipster)
+  + homework - the homework specification for the submission (a many to one relationship owned by Submission)
+  + student - the student that is submitting the homework (a one to many relationship owned by Student)
 
-
+```
 JSON Format:
 
   {
@@ -81,12 +106,14 @@ JSON Format:
       "studentId": "string"
     }
   }
+```
 
-Grade 
-  score // e.g., 92.6
-  grader - the instructor that graded the submission (a many to one relationship with Instructor)
-  submission - the submission that the grade is for (a one to one relationship with Submission)
+### Grade 
+  + score // e.g., 92.6
+  + grader - the instructor that graded the submission (a many to one relationship with Instructor)
+  + submission - the submission that the grade is for (a one to one relationship with Submission)
 
+```
 JSON Format:
 
  {
@@ -115,6 +142,8 @@ JSON Format:
   }
 
 ```
+
+
 
 This API should be provided an HTTP API through GET and POST requests to the following paths:
 
