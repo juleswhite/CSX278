@@ -85,8 +85,8 @@ JSON Format:
 
 ### Submission 
   + date (ZonedDateTime if using JHipster)
-  + homework - the homework specification for the submission (a many to one relationship owned by Submission)
-  + student - the student that is submitting the homework (a one to many relationship owned by Student)
+  + homework - the homework specification for the submission (a many (submission) to one (homework) relationship owned by Submission)
+  + student - the student that is submitting the homework (a one (student) to many (submission) relationship owned by Student)
 
 ```
 JSON Format:
@@ -110,8 +110,8 @@ JSON Format:
 
 ### Grade 
   + score // e.g., 92.6
-  + grader - the instructor that graded the submission (a many to one relationship with Instructor)
-  + submission - the submission that the grade is for (a one to one relationship with Submission)
+  + grader - the instructor that graded the submission (a many (grade) to one (instructor) relationship with Instructor owned by Grade)
+  + submission - the submission that the grade is for (a one (grade) to one (homework) relationship with Submission owned by Grade)
 
 ```
 JSON Format:
