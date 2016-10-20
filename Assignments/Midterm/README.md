@@ -145,7 +145,7 @@ JSON Format:
 
 
 
-This API should be provided an HTTP API through GET and POST requests to the following paths:
+This API should support GET and POST requests to the following paths:
 
 ```
 /api/instructors 
@@ -156,7 +156,7 @@ This API should be provided an HTTP API through GET and POST requests to the fol
 ```
 
 The GET request to each of these paths should return all entities currently stored on the 
-server. The POST path should accept an HTTP request body that is JSON using the format
+server. The POST requests to these paths should accept a JSON request body using the format
 specified above in the data model (or your JHipster version's format). 
 
 The API should also support GET and DELETE requests to the following paths:
