@@ -64,21 +64,21 @@ Available positions on this team are:
 
 ## Team 8 - HPV - https://github.com/X278-2016/team-8
 
-This team will develop an application to help remind parents to vaccinate their children for HPV. Dr. Pamela Hull will mentor the team. The team will have access to a Twilio account (if desired) for sending SMS and/or placing voice calls. Lucas Schoch will be the UNIV student lead for the project.
+This team will develop a text messaging application using Twilio (https://www.twilio.com/) to help remind parents to vaccinate their children for HPV. Dr. Pamela Hull will mentor the team. The team will have access to a Twilio account (if desired) for sending SMS and/or placing voice calls. Lucas Schoch will be the UNIV student lead for the project.
 
 Available positions on this team are:
-  1. Java / Javascript Developer
-  2. Java / Javascript Developer
+  1. Javascript Front-end Developer
+  2. Java / Javascript Developer or Javascript Front-end Developer
   3. Java / Javascript Developer
 
 ## Team 9 - Legal - https://github.com/X278-2016/team-9
 
-This team will develop a prototype application for using the Bitcoin blockchain to track bad debts and aid debtors in defending their legal rights. JB Ruhl will mentor the team. Sasha Pines will be the UNIV student lead for the project.
+This team will develop a prototype mobile application to aid debtors in defending their legal rights. JB Ruhl will mentor the team. Sasha Pines will be the UNIV student lead for the project.
 
 Available positions on this team are:
-  1. Java / Javascript Developer
-  2. Java / Javascript Developer
-  3. Java / Javascript Developer
+  1. Mobile developer with React Native or iOS/Android
+  2. Mobile developer with React Native or iOS/Android
+  3. Back-end developer with JHipster, Firebase, or NodeJS / Express
 
 ## Team 10 - Smart Cities T-Hub - https://github.com/X278-2016/team-10
 

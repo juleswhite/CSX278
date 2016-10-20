@@ -12,28 +12,29 @@ presentation in class on either Dec. 6 or 8. Each team will also
 create a narrated video that demonstrates their MVP.
 
 Class periods will be dedicated to immersion in the software engineering 
-process via stand-up meetings, coding, and reviews. All team members are
-expected to attend class and contribute to the stand-up meeting. Team members
-are free to use any remaining class time to complete their individual 
-contributions to the project for the class period and push them to the GitHub
-repo. 
-
-Teams and individuals will be graded heavily on how well they demonstrate
-incremental progress using an Agile process. Each team member is required to 
-demonstrate his/her contribution to the team's incremental progress through concrete 
-artifacts. For CS students, team members must make and push commits to the team's
-GitHub repo. For UNIV students, the communication with the instructor, Trello,
-video, etc. will be used to gauge progress.
+process via stand-up meetings, coding, and reviews. Teams and individuals will be 
+graded heavily on how well they demonstrate incremental progress using an Agile 
+process. Each team member is required to demonstrate his/her contribution to the 
+team's incremental progress through concrete artifacts. For CS students, 
+team members must make and push commits to the team's GitHub repo. For UNIV students, 
+the communication with the instructor, Trello, video, etc. will be used to gauge progress.
 
 Each class period, every team must meet and hold a stand-up meeting facilitated
 by the university student. The goals of the stand-up meeting are to discuss
 the current user stories and backlog, as well as plan next steps. All team members
-are required to attend the stand-up meetings. Teams may hold their stand-up meetings 
-in the classroom or in the open seating in the Innovation Center. 
+are required to attend the stand-up meetings. If your team is
+meeting with the instructor during class, your team should meet in the classroom. 
+If your team is not meeting with the instructor that day, you may hold your stand-up meeting
+anywhere that they would like. You can schedule access to a conference room in the Innovation Center
+by contacting Deanna Meador (deanna.n.meador@vanderbilt.edu). All team members are
+expected to attend and contribute to the stand-up meeting.  Team members are free to 
+use any remaining class time to complete their individual contributions to the project 
+for the class period and push them to the GitHub repo. All projects must be opensource
+under the Apache 2 or GPL license.
 
 Every other class period, your team will meet with the instructor to discuss progress
 and challenges that you are facing. During these meetings, each team member will 
-present their contribution since the prior meeting. For CS students, please make 
+present their contributions since the prior meeting. For CS students, please make 
 sure that you have your commits open in GitHub and are prepared to discuss your
 code / design. In addition to presenting individual contributions, each team should
 demo the progress from the prior demo. The meeting schedules are listed below. 
