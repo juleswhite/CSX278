@@ -64,7 +64,7 @@ Available positions on this team are:
 
 ## Team 8 - HPV - https://github.com/X278-2016/team-8
 
-This team will develop a text messaging application using Twilio (https://www.twilio.com/) to help remind parents to vaccinate their children for HPV. Dr. Pamela Hull will mentor the team. The team will have access to a Twilio account (if desired) for sending SMS and/or placing voice calls. Lucas Schoch will be the UNIV student lead for the project.
+This team will develop an application to help clinics improve HPV vaccination rates. Dr. Pamela Hull will mentor the team. The team will have access to a Twilio account (if desired) for sending SMS and/or placing voice calls. Lucas Schoch will be the UNIV student lead for the project.
 
 Available positions on this team are:
   1. Javascript Front-end Developer
