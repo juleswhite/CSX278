@@ -11,6 +11,10 @@ entities, the solution will require generating 5 entities. If you use
 another language / framework, this midterm will probably require a lot
 of work.
 
+# Deadline
+
+10:59am CST on 10/25
+
 # Spec
 
 Please implement an HTTP application that allows you to store information related to 
